@@ -1,2 +1,2 @@
-import Document from "@/components/Document";
+import Document from "@/src/components/Document";
 export default Document;

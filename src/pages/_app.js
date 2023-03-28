@@ -1,3 +1,3 @@
-import "@/styles/globals.css";
-import App from "@/components/App";
+import "@/src/styles/globals.css";
+import App from "@/src/components/App";
 export default App;

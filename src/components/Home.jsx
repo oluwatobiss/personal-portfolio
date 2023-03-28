@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Image from "next/image";
+import styles from "@/src/styles/Home.module.css";
+import featuredImage from "@/public/home-featured-image.svg";
 
 export default function Home() {
   return (
@@ -9,9 +12,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>This is the homepage</h1>
-      </main>
+      <nav>
+        <span>Oluwatobi</span>
+        <span>
+          <span>Milestones</span>
+          <span>Press</span>
+          <span>Awards</span>
+          <span className="theme">th</span>
+        </span>
+      </nav>
+      <section className={styles.featuredSection}>
+        <h1>Oluwatobi Sofela</h1>
+        <p>A JavaScript Front End Web Developer</p>
+        <Image src={featuredImage} alt="Home featured image" />
+      </section>
     </>
   );
 }
