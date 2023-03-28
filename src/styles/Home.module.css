@@ -1,7 +1,11 @@
 .featuredSection {
-  background-color: blue;
-  max-width: 100vw;
-  max-height: 100vh;
+  background-image: url(../../public/home-featured-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  /* background-color: blue; */
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Enable hover only on non-touch devices */

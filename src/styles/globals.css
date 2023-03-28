@@ -13,11 +13,15 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: brown;
+  position: fixed;
+  width: 100vw;
+  padding: 1rem;
+  background-color: rgba(0, 0, 255, 0.4);
+  backdrop-filter: blur(2px);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
