@@ -1,3 +1,56 @@
+.introSection {
+  background-image: url(../../public/home-intro-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.introSection div {
+  margin-left: 4rem;
+}
+
+.introSection h1 {
+  font-size: 3.3rem;
+}
+
+.projectSection {
+  padding: 5rem;
+}
+
+.projectSection h2 {
+  margin-bottom: 20px;
+}
+
+.projectSection div {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.infoSpan {
+  padding: 2.5rem;
+}
+
+.infoSpan p {
+  margin-top: 15px;
+}
+
+.imageSpan {
+  border-left: 1px solid #fff;
+}
+
+.projectSection img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 25px 25px 0;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 }
