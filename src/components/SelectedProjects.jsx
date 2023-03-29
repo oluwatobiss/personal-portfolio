@@ -18,8 +18,6 @@ const selectedProjectDivs = selectedProjectsInfoArray.map((i) => (
   </div>
 ));
 
-function SelectedProjects() {
+export default function SelectedProjects() {
   return selectedProjectDivs;
 }
-
-export default SelectedProjects;

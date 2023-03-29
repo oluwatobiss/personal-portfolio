@@ -1,11 +1,9 @@
 import Layout from "./Layout";
 import Head from "next/head";
 import SelectedProjects from "./SelectedProjects";
+import Publications from "./Publications";
 import styles from "@/src/styles/Home.module.css";
 import { Nunito } from "next/font/google";
-import { RiArticleLine } from "react-icons/ri";
-import { VscFolderLibrary } from "react-icons/vsc";
-import { GiBlackBook } from "react-icons/gi";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -40,20 +38,7 @@ export default function Home() {
         className={`${styles.nonIntroSection} ${styles.publicationSection}`}
       >
         <h2>Publications</h2>
-        <div className={nunito.className}>
-          <span>
-            <RiArticleLine />
-            <h3>Articles</h3>
-          </span>
-          <span>
-            <VscFolderLibrary />
-            <h3>Libraries</h3>
-          </span>
-          <span>
-            <GiBlackBook />
-            <h3>Books</h3>
-          </span>
-        </div>
+        {<Publications />}
       </section>
     </Layout>
   );
