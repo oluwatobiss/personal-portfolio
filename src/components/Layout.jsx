@@ -1,7 +1,6 @@
 import Head from "next/head";
-
-const name = "Oluwatobi Sofela";
-export const siteTitle = "Next.js Sample Website";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
   return (
@@ -12,7 +11,7 @@ export default function Layout({ children }) {
         <meta name="color-scheme" content="dark light" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{children}</main>
+      <main className={inter.className}>{children}</main>
     </div>
   );
 }
