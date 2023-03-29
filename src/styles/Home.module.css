@@ -1,11 +1,20 @@
-.featuredSection {
-  background-image: url(../../public/home-featured-image.png);
+.introSection {
+  background-image: url(../../public/home-intro-image.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
-  /* background-color: blue; */
+  background-position: right center;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.introSection div {
+  margin-left: 4rem;
+}
+
+.introSection h1 {
+  font-size: 3.3rem;
 }
 
 /* Enable hover only on non-touch devices */

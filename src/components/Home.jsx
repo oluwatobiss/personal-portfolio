@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/src/styles/Home.module.css";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
+      <nav className={nunito.className}>
         <span>Oluwatobi</span>
         <span>
           <span>Milestones</span>
@@ -20,9 +22,13 @@ export default function Home() {
           <span className="theme">th</span>
         </span>
       </nav>
-      <section className={styles.featuredSection}>
-        <h1>Oluwatobi Sofela</h1>
-        <p>A JavaScript Front End Web Developer</p>
+      <section className={styles.introSection}>
+        <div>
+          <h1>Oluwatobi Sofela</h1>
+          <p className={nunito.className}>
+            A JavaScript Front End Web Developer
+          </p>
+        </div>
       </section>
     </>
   );
