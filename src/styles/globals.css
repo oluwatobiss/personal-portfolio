@@ -16,8 +16,8 @@ nav {
   position: fixed;
   width: 100vw;
   padding: 1rem;
-  background-color: rgba(0, 0, 255, 0.4);
-  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 255, 0.5);
+  backdrop-filter: blur(7px);
 }
 
 /* @media (prefers-color-scheme: dark) {
