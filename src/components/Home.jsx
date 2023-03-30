@@ -2,6 +2,7 @@ import Layout from "./Layout";
 import Head from "next/head";
 import SelectedProjects from "./SelectedProjects";
 import Publications from "./Publications";
+import Contact from "./Contact";
 import styles from "@/src/styles/Home.module.css";
 import { Nunito } from "next/font/google";
 
@@ -39,6 +40,10 @@ export default function Home() {
       >
         <h2>Publications</h2>
         {<Publications />}
+      </section>
+      <section className={`${styles.nonIntroSection} ${styles.contactSection}`}>
+        <h2>Contact</h2>
+        {<Contact />}
       </section>
     </Layout>
   );

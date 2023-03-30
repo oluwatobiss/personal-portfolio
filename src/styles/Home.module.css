@@ -70,6 +70,22 @@
   height: auto;
 }
 
+.contactSection div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+.contactSection span {
+  text-align: center;
+  padding: 70px;
+}
+
+.contactSection svg {
+  width: 100px;
+  height: auto;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 }
