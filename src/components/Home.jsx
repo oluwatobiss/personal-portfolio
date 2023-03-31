@@ -14,15 +14,6 @@ export default function Home() {
       <Head>
         <title>Oluwatobi Sofela - A JavaScript Front End Web Developer</title>
       </Head>
-      <nav className={nunito.className}>
-        <span>Oluwatobi</span>
-        <span>
-          <span>Milestones</span>
-          <span>Press</span>
-          <span>Awards</span>
-          <span className="theme">th</span>
-        </span>
-      </nav>
       <section className={styles.introSection}>
         <div>
           <h1>Oluwatobi Sofela</h1>
