@@ -1,5 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
+import styles from "@/src/styles/Layout.module.css";
 import { Inter, Nunito } from "next/font/google";
+
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -12,17 +15,17 @@ export default function Layout({ children }) {
         <meta name="color-scheme" content="dark light" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={nunito.className}>
-        <span>Oluwatobi</span>
+      <nav className={`${nunito.className} ${styles.nav}`}>
+        <Link href="/">Oluwatobi</Link>
         <span>
-          <span>Milestones</span>
-          <span>Press</span>
-          <span>Awards</span>
+          <Link href="/milestones">Milestones</Link>
+          <Link href="/press">Press</Link>
+          <Link href="/awards">Awards</Link>
           <span className="theme">th</span>
         </span>
       </nav>
       <main className={inter.className}>{children}</main>
-      <footer className={inter.className}>
+      <footer className={`${inter.className} ${styles.footer}`}>
         Copyright © {new Date().getFullYear()} Oluwatobi Sofela • All rights
         reserved.
       </footer>

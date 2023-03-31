@@ -10,23 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100vw;
-  padding: 1rem;
-  background-color: rgba(0, 0, 255, 0.5);
-  backdrop-filter: blur(7px);
-}
-
-footer {
-  border-top: 1px solid white;
-  padding: 25px;
-  text-align: center;
-  font-size: 0.8em;
-}
-
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
