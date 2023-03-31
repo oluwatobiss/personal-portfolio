@@ -22,6 +22,10 @@ export default function Layout({ children }) {
         </span>
       </nav>
       <main className={inter.className}>{children}</main>
+      <footer className={inter.className}>
+        Copyright © {new Date().getFullYear()} Oluwatobi Sofela • All rights
+        reserved.
+      </footer>
     </div>
   );
 }

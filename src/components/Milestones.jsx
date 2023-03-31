@@ -12,10 +12,6 @@ export default function Home() {
           <h1>Milestones page</h1>
         </div>
       </section>
-      <footer>
-        Copyright © {new Date().getFullYear()} Oluwatobi Sofela • All rights
-        reserved.
-      </footer>
     </Layout>
   );
 }
