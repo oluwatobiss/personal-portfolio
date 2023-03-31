@@ -45,6 +45,10 @@ export default function Home() {
         <h2>Contact</h2>
         {<Contact />}
       </section>
+      <footer className={styles.footer}>
+        Copyright © {new Date().getFullYear()} Oluwatobi Sofela • All rights
+        reserved.
+      </footer>
     </Layout>
   );
 }

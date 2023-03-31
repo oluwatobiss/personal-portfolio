@@ -9,7 +9,7 @@ const selectedProjectDivs = selectedProjectsInfoArray.map((i) => (
   <div key={uniqid()}>
     <span className={styles.infoSpan}>
       <h3>{i.name}</h3>
-      <small>{i.stack}</small>
+      <span className={styles.techStackSpan}>{i.stack}</span>
       <p className={nunito.className}>{i.about}</p>
     </span>
     <span className={styles.imageSpan}>

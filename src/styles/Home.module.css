@@ -41,6 +41,10 @@
   margin-top: 15px;
 }
 
+.techStackSpan {
+  font-size: 0.8em;
+}
+
 .imageSpan {
   border-left: 1px solid #fff;
 }
@@ -84,6 +88,13 @@
 .contactSection svg {
   width: 100px;
   height: auto;
+}
+
+.footer {
+  border-top: 1px solid white;
+  padding: 25px;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 /* Enable hover only on non-touch devices */
