@@ -16,13 +16,15 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className={`${nunito.className} ${styles.nav}`}>
-        <Link href="/">Oluwatobi</Link>
-        <span>
+        <Link href="/" className={styles.navLogo}>
+          Oluwatobi
+        </Link>
+        <span className={styles.navRoutes}>
           <Link href="/milestones">Milestones</Link>
           <Link href="/press">Press</Link>
           <Link href="/awards">Awards</Link>
-          <span className="theme">th</span>
         </span>
+        <span className={styles.navTheme}>th</span>
       </nav>
       <main className={inter.className}>{children}</main>
       <footer className={`${inter.className} ${styles.footer}`}>
