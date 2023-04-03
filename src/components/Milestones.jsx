@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Oluwatobi Sofela - A JavaScript Front End Web Developer</title>
+        <title>Milestones - Oluwatobi Sofela</title>
       </Head>
       <section>
         <div>
