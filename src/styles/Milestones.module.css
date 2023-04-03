@@ -1,0 +1,118 @@
+.pageHeading {
+  font-size: 3.3rem;
+  margin: 20px 5rem;
+}
+
+.timeline {
+  padding: 3rem 7vw;
+  position: relative;
+  width: 100vw;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: calc(
+    (22vw / 2) + 7vw - 3px
+  ); /* (.milestoneInfo's left / 2) + .timeline padding-right - ½ width */
+  z-index: -1;
+}
+
+.milestoneSection {
+  position: relative;
+  width: 100vw; /* Use same as .timeline to get right positioning for the vertical line and milestone icons */
+}
+
+.milestoneDate {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  height: 54px; /* Use same as .milestoneIcon to center align appropriately */
+  line-height: 54px;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+.milestoneIcon {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  font-size: 2.3rem;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: calc(
+    (22vw / 2) - (54px / 2)
+  ); /* (.milestoneInfo's left / 2) - (width / 2) */
+  box-shadow: 0 0 0.5em #ffffff87;
+}
+
+.milestoneCategory {
+  display: inline-block;
+  color: #000;
+  background-color: rgba(173, 216, 230, 0.9);
+  border: 1px solid #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 0 0.9rem;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  left: calc(27vw - 5vw); /* Same as .milestoneInfo left */
+  font-size: 0.9em;
+}
+
+.milestoneInfo {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  border: 1px solid #fff;
+  border-radius: 0 25px 25px;
+  margin-bottom: 20px;
+  position: relative;
+  width: calc(73vw - 7vw); /* 73% of vw - .timeline's padding width */
+  left: calc(27vw - 5vw); /* 27% of vw - preferred right space's width */
+}
+
+.milestoneInfo::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc((27vw - 5vw) / 2); /* .milestoneInfo left / 2 */
+  transform: translateX(-100%);
+  background-color: #fff;
+  top: calc(
+    (54px / 2) - 30px
+  ); /* (.milestoneIcon height / 2) - .milestoneCategory height */
+  z-index: -1;
+}
+
+.infoSpan {
+  padding: 2.5rem;
+}
+
+.infoSpan p {
+  margin-top: 15px;
+}
+
+.techStackSpan {
+  font-size: 0.8em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.imageSpan {
+  border-left: 1px solid #fff;
+}
+
+.imageSpan img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 25px 25px 0;
+}
