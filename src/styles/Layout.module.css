@@ -1,10 +1,25 @@
 .nav {
   position: sticky;
   top: 0;
+  display: grid;
+  grid-template-columns: 15% 1fr 10%;
   width: 100vw;
   padding: 1rem;
   background-color: rgba(0, 0, 255, 0.5);
   backdrop-filter: blur(7px);
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.navRoutes,
+.navTheme {
+  text-align: end;
+}
+
+.navRoutes a {
+  margin-left: 1.5rem;
 }
 
 .footer {
