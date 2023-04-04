@@ -25,6 +25,7 @@
 .milestoneSection {
   position: relative;
   width: 100vw; /* Use same as .timeline to get right positioning for the vertical line and milestone icons */
+  margin-bottom: 57px;
 }
 
 .milestoneDate {
