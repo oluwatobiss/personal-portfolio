@@ -1,6 +1,6 @@
-import transformProjPic from "@/public/transform-oluwatobi-sofela.png";
-import findProjPic from "@/public/find-oluwatobi-sofela.png";
-import youtubeProjPic from "@/public/youtube-clone-oluwatobi-sofela.png";
+import transformProjPic from "@/public/projects/education/transform-oluwatobi-sofela.png";
+import findProjPic from "@/public/projects/education/find-oluwatobi-sofela.png";
+import youtubeProjPic from "@/public/projects/education/youtube-clone-oluwatobi-sofela.png";
 
 const selectedProjectsInfoArray = [
   {

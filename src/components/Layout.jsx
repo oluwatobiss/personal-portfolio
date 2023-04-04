@@ -20,7 +20,7 @@ export default function Layout({ children }) {
           Oluwatobi
         </Link>
         <span className={styles.navRoutes}>
-          <Link href="/milestones">Milestones</Link>
+          <Link href="/projects">Projects</Link>
           <Link href="/press">Press</Link>
           <Link href="/awards">Awards</Link>
         </span>

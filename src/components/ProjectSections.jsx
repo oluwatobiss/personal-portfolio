@@ -1,28 +1,28 @@
 import uniqid from "uniqid";
 import Image from "next/image";
-import styles from "@/src/styles/Milestones.module.css";
+import styles from "@/src/styles/Projects.module.css";
 import { Inter, Nunito } from "next/font/google";
-import educationMilestonesInfoArray from "../educationMilestonesInfoArray";
+import educationProjectsInfoArray from "../educationProjectsInfoArray";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 
-const eduMilestonesArrInDescOrder = [...educationMilestonesInfoArray].sort(
+const eduProjectsArrInDescOrder = [...educationProjectsInfoArray].sort(
   (a, b) => b.endDate - a.endDate
 );
 
-const milestoneSections = eduMilestonesArrInDescOrder.map((i) => {
+const projectSections = eduProjectsArrInDescOrder.map((i) => {
   const endDateString = i.startDate !== i.endDate ? ` - ${i.endDate}` : "";
   return (
-    <section className={styles.milestoneSection} key={uniqid()}>
-      <div className={styles.milestoneDate}>
+    <section className={styles.projectSection} key={uniqid()}>
+      <div className={styles.projectDate}>
         <em>{`${i.startDate}${endDateString}`}</em>
       </div>
-      <div className={styles.milestoneIcon}>{i.icon}</div>
-      <div className={`${styles.milestoneCategory} ${nunito.className}`}>
+      <div className={styles.projectIcon}>{i.icon}</div>
+      <div className={`${styles.projectCategory} ${nunito.className}`}>
         {i.category}
       </div>
-      <div className={styles.milestoneInfo}>
+      <div className={styles.projectInfo}>
         <span className={styles.infoSpan}>
           <h3>{i.name}</h3>
           <p className={nunito.className}>{i.about}</p>
@@ -39,6 +39,6 @@ const milestoneSections = eduMilestonesArrInDescOrder.map((i) => {
   );
 });
 
-export default function MilestoneSections() {
-  return milestoneSections;
+export default function ProjectSections() {
+  return projectSections;
 }
