@@ -7,7 +7,11 @@ import educationMilestonesInfoArray from "../educationMilestonesInfoArray";
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 
-const milestoneSections = educationMilestonesInfoArray.map((i) => {
+const eduMilestonesArrInDescOrder = [...educationMilestonesInfoArray].sort(
+  (a, b) => b.endDate - a.endDate
+);
+
+const milestoneSections = eduMilestonesArrInDescOrder.map((i) => {
   const endDateString = i.startDate !== i.endDate ? ` - ${i.endDate}` : "";
   return (
     <section className={styles.milestoneSection} key={uniqid()}>
