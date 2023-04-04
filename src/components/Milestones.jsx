@@ -44,6 +44,32 @@ export default function Milestones() {
             </span>
           </div>
         </section>
+        <section className={styles.milestoneSection} key={uniqid()}>
+          <div className={styles.milestoneDate}>
+            <em>2021</em>
+          </div>
+          <div className={styles.milestoneIcon}>{<MdOutlineSchool />}</div>
+          <div className={`${styles.milestoneCategory} ${nunito.className}`}>
+            Education
+          </div>
+          <div className={styles.milestoneInfo}>
+            <span className={styles.infoSpan}>
+              <h3>Transform.</h3>
+              <p className={nunito.className}>
+                Transform is a shopping cart website where users browse for
+                glamorous items to spark up their style. You can use it to
+                transform your clothing, jewelry, and electronic collections.
+              </p>
+              <span className={styles.techStackSpan}>
+                <strong className={inter.className}>Tech Stack: </strong>
+                ReactJS, React Router
+              </span>
+            </span>
+            <span className={styles.imageSpan}>
+              <Image src={transformProjPic} alt="test" placeholder="blur" />
+            </span>
+          </div>
+        </section>
       </div>
     </Layout>
   );
