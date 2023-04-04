@@ -16,7 +16,7 @@ import calculatorProjPic from "@/public/projects/education/calculator-oluwatobi-
 import etchASketchProjPic from "@/public/projects/education/etch-a-sketch-oluwatobi-sofela.png";
 import rockPaperScissorsProjPic from "@/public/projects/education/rock-paper-scissors-oluwatobi-sofela.png";
 
-const educationProjectsArray = [
+const educationProjectsInfoArray = [
   {
     endDate: 2022,
     startDate: 2022,
@@ -211,4 +211,4 @@ const educationProjectsArray = [
   },
 ];
 
-export default educationProjectsArray;
+export default educationProjectsInfoArray;

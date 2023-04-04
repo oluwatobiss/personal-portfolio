@@ -1,13 +1,21 @@
 import uniqid from "uniqid";
 import Image from "next/image";
-import selectedProjectsInfoArray from "../selectedProjectsInfoArray";
+import educationProjectsInfoArray from "../educationProjectsInfoArray";
 import styles from "@/src/styles/Home.module.css";
 import { Inter, Nunito } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
+let selectedProjects = [];
 
-const selectedProjectDivs = selectedProjectsInfoArray.map((i) => (
+for (const project of educationProjectsInfoArray) {
+  const namesOfSelectedProjects = ["Transform.", "Find", "YouTube Clone"];
+  if (namesOfSelectedProjects.includes(project.name)) {
+    selectedProjects.push(project);
+  }
+}
+
+const selectedProjectDivs = selectedProjects.map((i) => (
   <div key={uniqid()}>
     <span className={styles.infoSpan}>
       <h3>{i.name}</h3>
