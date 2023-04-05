@@ -33,7 +33,9 @@ const projectSections = allProjectsInDescOrder.map((i) => {
           <h3>{i.name}</h3>
           <p className={nunito.className}>{i.about}</p>
           <span className={styles.techStackSpan}>
-            <strong className={inter.className}>Tech Stack: </strong>
+            <strong className={inter.className}>
+              {`${i.stackType || ""}`} Stack:{" "}
+            </strong>
             {`${i.stack}`}
           </span>
         </span>
