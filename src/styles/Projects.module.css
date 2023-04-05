@@ -58,7 +58,6 @@
 .projectCategory {
   display: inline-block;
   color: #000;
-  background-color: rgba(173, 216, 230, 0.9);
   border: 1px solid #fff;
   border-radius: 5px 5px 0 0;
   padding: 0 0.9rem;
@@ -67,6 +66,14 @@
   position: relative;
   left: calc(27vw - 5vw); /* Same as .projectInfo left */
   font-size: 0.9em;
+}
+
+.EducationProjectCategory {
+  background-color: rgba(173, 216, 230, 0.9);
+}
+
+.WorkProjectCategory {
+  background-color: rgba(255, 165, 0, 0.9);
 }
 
 .projectInfo {
