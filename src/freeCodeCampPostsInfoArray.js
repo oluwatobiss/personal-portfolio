@@ -1,4 +1,4 @@
-import cssGrid from "@/public/guest-posts/complete-css-grid-guide.jpg";
+import cssGrid from "@/public/guest-posts/freecodecamp/complete-css-grid-guide.jpg";
 
 const freeCodeCampPostsInfoArray = [
   {

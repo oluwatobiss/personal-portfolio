@@ -1,4 +1,4 @@
-import educativeAnswers from "@/public/guest-posts/educative-answers-oluwatobi-sofela.webp";
+import educativeAnswers from "@/public/guest-posts/educative/educative-answers-oluwatobi-sofela.webp";
 
 const educativeAnswersPostsInfoArray = [
   {
