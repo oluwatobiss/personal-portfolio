@@ -2,3 +2,66 @@
   font-size: 3.3rem;
   margin: 20px 5rem;
 }
+
+.guestPosts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding: 3rem 5rem;
+}
+
+.guestPostCard {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 40% 1fr;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid white;
+  object-fit: cover;
+}
+
+.textSection {
+  padding: 20px 30px;
+  display: grid;
+  grid-template-rows: 80% 1fr;
+}
+
+.postHost {
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 0.87rem;
+  letter-spacing: 0.77px;
+}
+
+.freeCodeCampTag {
+  background-color: #4d3800;
+}
+
+.EducativeAnswersTag {
+  background-color: #1d1aff;
+}
+
+.textSection h2 {
+  font-size: 1.3em;
+  line-height: 1.55em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.textSection p {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.publishedDate {
+  border-top: 1px solid white;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  align-self: end;
+}

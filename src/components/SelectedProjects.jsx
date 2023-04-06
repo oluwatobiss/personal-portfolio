@@ -2,9 +2,8 @@ import uniqid from "uniqid";
 import Image from "next/image";
 import educationProjectsInfoArray from "../educationProjectsInfoArray";
 import styles from "@/src/styles/Home.module.css";
-import { Inter, Nunito } from "next/font/google";
+import { Nunito } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 let selectedProjects = [];
 
@@ -20,12 +19,12 @@ const selectedProjectDivs = selectedProjects.map((i) => (
     <span className={styles.infoSpan}>
       <h3>{i.name}</h3>
       <p className={nunito.className}>{i.about}</p>
-      <span className={styles.techStackSpan}>
-        <strong className={inter.className}>Tech Stack: </strong>
+      <span className={styles.techStack}>
+        <strong>Tech Stack: </strong>
         {i.stack}
       </span>
     </span>
-    <span className={styles.imageSpan}>
+    <span className={styles.imageContainer}>
       <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
     </span>
   </div>
