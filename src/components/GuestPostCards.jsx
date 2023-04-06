@@ -4,6 +4,7 @@ import { Inter, Nunito } from "next/font/google";
 import styles from "@/src/styles/GuestPosts.module.css";
 import educativeAnswersPostsInfoArray from "../educativeAnswersPostsInfoArray";
 import freeCodeCampPostsInfoArray from "../freeCodeCampPostsInfoArray";
+import hackernoonPostsInfoArray from "../hackernoonPostsInfoArray";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -11,6 +12,7 @@ const nunito = Nunito({ subsets: ["latin"] });
 const allGuestPostsInDescOrder = [
   ...freeCodeCampPostsInfoArray,
   ...educativeAnswersPostsInfoArray,
+  ...hackernoonPostsInfoArray,
 ].sort((a, b) => Date.parse(b.publishedDate) - Date.parse(a.publishedDate));
 
 const guestPostCards = allGuestPostsInDescOrder.map((i) => {
