@@ -61,7 +61,7 @@ const educativeAnswersPostsInfoArray = [
     host: "Educative Answers",
     title: "How to use an ES module and webpack",
     about:
-      "ES module is a file that allows us to export its code. Webpack is a tool developers use to bundle an application’s modules and dependencies into a single browser-compatible JavaScript file.",
+      "ES module is a file that allows us to export its code. Webpack is a tool developers use to bundle an application's modules and dependencies into a single browser-compatible JavaScript file.",
     publishedDate: "2022-05-20",
   },
   {
@@ -88,7 +88,7 @@ const educativeAnswersPostsInfoArray = [
     host: "Educative Answers",
     title: "What is array and object destructuring in JavaScript?",
     about:
-      "Array destructuring extracts an array’s value into new variables neatly. Object destructuring extracts an object’s value into new variables neatly.",
+      "Array destructuring extracts an array's value into new variables neatly. Object destructuring extracts an object's value into new variables neatly.",
     publishedDate: "2022-01-15",
   },
   {
@@ -106,7 +106,7 @@ const educativeAnswersPostsInfoArray = [
     host: "Educative Answers",
     title: "What is a web address?",
     about:
-      "A web address or URL is a website’s specific location. In other words, a URL is a text string that specifies the location of webpages, images, or videos on the internet.",
+      "A web address or URL is a website's specific location. In other words, a URL is a text string that specifies the location of webpages, images, or videos on the internet.",
     publishedDate: "2021-10-30",
   },
   {
@@ -124,7 +124,7 @@ const educativeAnswersPostsInfoArray = [
     host: "Educative Answers",
     title: "What is a CSS unit?",
     about:
-      "A CSS unit is the standard of measurement used in CSS to express the size of a specific element’s property. This article uses examples to discuss the two types of CSS units.",
+      "A CSS unit is the standard of measurement used in CSS to express the size of a specific element's property. This article uses examples to discuss the two types of CSS units.",
     publishedDate: "2021-07-26",
   },
   {
@@ -142,7 +142,7 @@ const educativeAnswersPostsInfoArray = [
     host: "Educative Answers",
     title: "What is a side effect?",
     about:
-      "Side effect occurs in a program when you use an external code in your function, which impacts the function’s ability to perform its task.",
+      "Side effect occurs in a program when you use an external code in your function, which impacts the function's ability to perform its task.",
     publishedDate: "2021-07-20",
   },
 ];
