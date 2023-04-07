@@ -22,17 +22,15 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
         <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
       </section>
       <section className={`${styles.textSection} ${nunito.className}`}>
-        <div>
-          <span
-            className={`${styles.postHost} ${
-              styles[`${i.host.replace(/\s/g, "")}Tag`]
-            }`}
-          >
-            {i.host}
-          </span>
-          <h2 className={inter.className}>{i.title}</h2>
-          <p>{i.about}</p>
-        </div>
+        <span
+          className={`${styles.postHost} ${
+            styles[`${i.host.replace(/\s/g, "")}Tag`]
+          }`}
+        >
+          {i.host}
+        </span>
+        <h2 className={inter.className}>{i.title}</h2>
+        <p>{i.about}</p>
         <div className={styles.publishedDate}>{i.publishedDate}</div>
       </section>
     </div>
