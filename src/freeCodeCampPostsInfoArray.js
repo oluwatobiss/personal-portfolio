@@ -22,6 +22,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "CSS Grid gives you the tools to create basic and advanced website layouts in responsive ways that look great on mobile, tablet, and desktop devices. This tutorial discusses everything you need to know to use CSS Grid like a pro.",
     publishedDate: "2023-03-16",
+    link: "https://www.freecodecamp.org/news/complete-guide-to-css-grid/",
   },
   {
     imgSrc: cssFlexbox,
@@ -32,6 +33,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "CSS Flexbox gives you the tools to create basic and advanced website layouts in flexible and responsive ways. This tutorial discusses everything you need to know to use Flexbox like a pro.",
     publishedDate: "2022-10-28",
+    link: "https://www.freecodecamp.org/news/css-flexbox-complete-guide/",
   },
   {
     imgSrc: functionsInJS,
@@ -42,6 +44,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Functions are one of the most widely-used features in programming. So, it helps to have a solid understanding of how they work. This tutorial discusses everything you need to know to use JavaScript functions like a pro.",
     publishedDate: "2022-10-05",
+    link: "https://www.freecodecamp.org/news/javascript-function-iife-parameters-code-blocks-explained/",
   },
   {
     imgSrc: testDrivenDevelopment,
@@ -52,6 +55,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Understanding test-driven development is an essential part of being a prolific software developer. Testing provides a solid platform for building reliable programs. This tutorial will show you all you need to implement test-driven development in your JavaScript and React applications.",
     publishedDate: "2022-07-26",
+    link: "https://www.freecodecamp.org/news/test-driven-development-tutorial-how-to-test-javascript-and-reactjs-app/",
   },
   {
     imgSrc: javaScriptModules,
@@ -62,6 +66,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Modules and Module Bundlers are essential components of modern web development. But understanding how they work can quickly become overwhelming. This article will show you all you need to know about ES Modules and Module Bundlers in plain English.",
     publishedDate: "2022-05-11",
+    link: "https://www.freecodecamp.org/news/javascript-es-modules-and-module-bundlers/",
   },
   {
     imgSrc: packageManager,
@@ -71,6 +76,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "A package manager is a tool developers use to automate finding, downloading, installing, configuring, upgrading, and removing a system's packages. This article will show you all you need to get started with package managers like NPM and Yarn.",
     publishedDate: "2022-04-05",
+    link: "https://www.freecodecamp.org/news/javascript-package-manager-npm-and-yarn/",
   },
   {
     imgSrc: temporalDeadZone,
@@ -81,6 +87,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Temporal Dead Zone and Hoisting are two essential terms in JavaScript. But understanding how they work can easily confuse you if you don't approach them properly. But don't fret! This article is here to help you get a good grasp of the two terms.",
     publishedDate: "2022-01-24",
+    link: "https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-explained/",
   },
   {
     imgSrc: destructuring,
@@ -91,6 +98,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "The destructuring assignment in JavaScript provides a neat and DRY way to extract values from your arrays and objects. This article aims to show you exactly how array and object destructuring assignments work in JavaScript.",
     publishedDate: "2021-11-10",
+    link: "https://www.freecodecamp.org/news/array-vs-object-destructuring-in-javascript/",
   },
   {
     imgSrc: restVsSpread,
@@ -100,6 +108,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "JavaScript uses three dots (...) for both the rest and spread operators. But these two operators are not the same. The main difference between rest and spread is that the rest operator puts the rest of some specific user-supplied values into a JavaScript array",
     publishedDate: "2021-09-15",
+    link: "https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/",
   },
   {
     imgSrc: lexicalScope,
@@ -108,6 +117,7 @@ const freeCodeCampPostsInfoArray = [
     title: "Lexical Scope in JavaScript – What Exactly Is Scope in JS?",
     about: `The term "lexical scope" may seem tricky to grasp at first glance. But it's helpful to understand what each word means. So this article will explain lexical scope by first examining the meaning of "lexical" and "scope".`,
     publishedDate: "2021-08-19",
+    link: "https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/",
   },
   {
     imgSrc: pureVsImpureFunctions,
@@ -118,6 +128,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Pure functions and impure functions are two programming terms you will often see in functional programming. One core difference between these two types of functions is whether or not they have side effects.",
     publishedDate: "2021-08-09",
+    link: "https://www.freecodecamp.org/news/pure-function-vs-impure-function/",
   },
   {
     imgSrc: minimaxAlgorithm,
@@ -127,6 +138,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Recently I wondered – how can I program the computer to be unbeatable in a tic-tac-toe game? Well, I thought I could easily get an answer to this question. But as I went back and forth from articles to videos to a series of coding meditations, I only succeeded in becoming more confused.",
     publishedDate: "2020-12-09",
+    link: "https://www.freecodecamp.org/news/minimax-algorithm-guide-how-to-create-an-unbeatable-ai/",
   },
   {
     imgSrc: gitVsGitHub,
@@ -136,6 +148,7 @@ const freeCodeCampPostsInfoArray = [
     about:
       "Have you ever been confused by how Git and GitHub work? Don't fret — you are not alone. Git and GitHub can be tricky sometimes, but by the end of this post you will have a good grasp of the two.",
     publishedDate: "2020-08-19",
+    link: "https://www.freecodecamp.org/news/git-and-github-overview/",
   },
 ];
 

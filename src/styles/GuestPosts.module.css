@@ -52,6 +52,11 @@
   background-color: #004d00;
 }
 
+.textSection a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .textSection h2 {
   font-size: 1.3em;
   line-height: 1.55em;

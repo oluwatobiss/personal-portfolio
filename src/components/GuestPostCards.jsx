@@ -19,7 +19,9 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
   return (
     <div className={styles.guestPostCard} key={uniqid()}>
       <section className={styles.imageSection}>
-        <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
+        <a href={i.link} target="_blank">
+          <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
+        </a>
       </section>
       <section className={`${styles.textSection} ${nunito.className}`}>
         <span
@@ -29,8 +31,10 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
         >
           {i.host}
         </span>
-        <h2 className={inter.className}>{i.title}</h2>
-        <p>{i.about}</p>
+        <a href={i.link} target="_blank">
+          <h2 className={inter.className}>{i.title}</h2>
+          <p>{i.about}</p>
+        </a>
         <div className={styles.publishedDate}>{i.publishedDate}</div>
       </section>
     </div>
