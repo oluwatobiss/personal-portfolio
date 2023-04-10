@@ -22,7 +22,7 @@ export default function Layout({ children }) {
         <span className={styles.navRoutes}>
           <Link href="/projects">Projects</Link>
           <Link href="/guest-posts">Guest Posts</Link>
-          <Link href="/awards">Awards</Link>
+          <Link href="/milestones">Milestones</Link>
         </span>
         <span className={styles.navTheme}>th</span>
       </nav>
