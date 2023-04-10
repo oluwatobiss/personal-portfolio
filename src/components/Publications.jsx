@@ -4,10 +4,12 @@ import publicationsInfoArray from "../publicationsInfoArray";
 
 const nunito = Nunito({ subsets: ["latin"] });
 const publicationSpans = publicationsInfoArray.map((i) => (
-  <span key={uniqid()}>
-    {i.icon}
-    <h3>{i.name}</h3>
-  </span>
+  <a href={i.link} target="_blank" rel="noopener" key={uniqid()}>
+    <span>
+      {i.icon}
+      <h3>{i.name}</h3>
+    </span>
+  </a>
 ));
 
 export default function Publications() {

@@ -69,7 +69,14 @@
   column-gap: 20px;
 }
 
+.publicationSection a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .publicationSection span {
+  display: inline-block;
+  width: 100%;
   text-align: center;
   border: 1px solid white;
   border-radius: 10px;
