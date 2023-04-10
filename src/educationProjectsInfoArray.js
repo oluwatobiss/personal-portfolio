@@ -29,6 +29,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS",
     imgSrc: dashboardProjPic,
     imgAlt: "Dashboard project's screenshot",
+    link: "https://oluwatobiss.github.io/dashboard-project",
   },
   {
     endDate: 2022,
@@ -42,6 +43,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript",
     imgSrc: melodyProjPic,
     imgAlt: "Melody project's screenshot",
+    link: "https://oluwatobiss.github.io/melody-sign-up-form/",
   },
   {
     endDate: 2022,
@@ -55,6 +57,7 @@ const educationProjectsInfoArray = [
     stack: "Firebase, Jest, ReactJS, Testing Library, YouTube API",
     imgSrc: youtubeProjPic,
     imgAlt: "Youtube project's screenshot",
+    link: "https://clone-theodinproject.web.app/",
   },
   {
     endDate: 2022,
@@ -68,6 +71,7 @@ const educationProjectsInfoArray = [
     stack: "Firebase, Jest, ReactJS, Testing Library",
     imgSrc: findProjPic,
     imgAlt: "Find project's screenshot",
+    link: "https://where-s-waldo-b7f36.web.app/",
   },
   {
     endDate: 2022,
@@ -81,6 +85,7 @@ const educationProjectsInfoArray = [
     stack: "InteractJS, Jest, ReactJS, Testing Library",
     imgSrc: battleshipProjPic,
     imgAlt: "Battleship project's screenshot",
+    link: "https://oluwatobiss.github.io/battleship/",
   },
   {
     endDate: 2021,
@@ -94,6 +99,7 @@ const educationProjectsInfoArray = [
     stack: "ReactJS, React Router, Fake Store API",
     imgSrc: transformProjPic,
     imgAlt: "Transform shopping cart project's screenshot",
+    link: "https://oluwatobiss.github.io/shopping-cart",
   },
   {
     endDate: 2021,
@@ -107,6 +113,7 @@ const educationProjectsInfoArray = [
     stack: "ReactJS, Pixabay API",
     imgSrc: uniqpikProjPic,
     imgAlt: "UniqPik project's screenshot",
+    link: "https://oluwatobiss.github.io/memory-card",
   },
   {
     endDate: 2021,
@@ -120,6 +127,7 @@ const educationProjectsInfoArray = [
     stack: "ReactJS",
     imgSrc: cvBuilderProjPic,
     imgAlt: "CV Builder project's screenshot",
+    link: "https://oluwatobiss.github.io/cv-builder",
   },
   {
     endDate: 2021,
@@ -133,6 +141,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript, Abstract API, OpenWeatherMap API",
     imgSrc: oluweatherProjPic,
     imgAlt: "OluWeather project's screenshot",
+    link: "https://oluwatobiss.github.io/weather-forecast/",
   },
   {
     endDate: 2021,
@@ -146,6 +155,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript, Webpack",
     imgSrc: toDoListProjPic,
     imgAlt: "My Plans project's screenshot",
+    link: "https://my-plans.netlify.app/",
   },
   {
     endDate: 2021,
@@ -159,6 +169,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript, Webpack",
     imgSrc: yummyFoodsProjPic,
     imgAlt: `yummyFoods project's screenshot`,
+    link: "https://yummy-foods-restaurant.netlify.app/",
   },
   {
     endDate: 2020,
@@ -172,6 +183,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript",
     imgSrc: ticTacToeProjPic,
     imgAlt: "Tic Tac Toe project's screenshot",
+    link: "https://oluwatobiss.github.io/tic-tac-toe/",
   },
   {
     endDate: 2022,
@@ -185,6 +197,7 @@ const educationProjectsInfoArray = [
     stack: "CSS, Firebase, HTML, JavaScript, Webpack",
     imgSrc: libraryProjPic,
     imgAlt: "My Library project's screenshot",
+    link: "https://library-app-262e5.web.app/",
   },
   {
     endDate: 2020,
@@ -198,6 +211,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript",
     imgSrc: calculatorProjPic,
     imgAlt: "Standard Calculator project's screenshot",
+    link: "https://oluwatobiss.github.io/calculator/",
   },
   {
     endDate: 2020,
@@ -211,6 +225,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript",
     imgSrc: etchASketchProjPic,
     imgAlt: "Etch-a-Sketch project's screenshot",
+    link: "https://oluwatobiss.github.io/etch-a-sketch/",
   },
   {
     endDate: 2020,
@@ -224,6 +239,7 @@ const educationProjectsInfoArray = [
     stack: "HTML, CSS, JavaScript",
     imgSrc: rockPaperScissorsProjPic,
     imgAlt: "The Rock - Paper - Scissors project's screenshot",
+    link: "https://oluwatobiss.github.io/rock-paper-scissors/",
   },
 ];
 

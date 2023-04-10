@@ -8,7 +8,7 @@ const hackernoonPostsInfoArray = [
     host: "HackerNoon",
     title: "SVG: How to Use Scalable Vector Graphics in WordPress",
     about:
-      "This article will show you all you need to upload and use SVGs (Scalable Vector Graphics) in WordPress successfully. Best of all, you don't need to buy any plugins! You can get it all done for free.",
+      "This article will show you all you need to upload and use SVGs (Scalable Vector Graphics) in WordPress. Best of all, you don't need to buy any plugins! You can get it all done for free.",
     publishedDate: "2021-06-24",
     link: "https://hackernoon.com/svg-how-to-use-scalable-vector-graphics-in-wordpress-das37wd",
   },

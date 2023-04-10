@@ -100,6 +100,11 @@
   z-index: -1;
 }
 
+.projectInfo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .infoSpan {
   padding: 2.5rem;
 }

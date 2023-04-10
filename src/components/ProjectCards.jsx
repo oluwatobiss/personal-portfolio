@@ -29,15 +29,19 @@ const projectCards = allProjectsInDescOrder.map((i) => {
       </div>
       <div className={styles.projectInfo}>
         <span className={styles.infoSpan}>
-          <h3>{i.name}</h3>
-          <p className={nunito.className}>{i.about}</p>
+          <a href={i.link} target="_blank" rel="noopener">
+            <h3>{i.name}</h3>
+            <p className={nunito.className}>{i.about}</p>
+          </a>
           <span className={styles.techStack}>
             <strong>{`${i.stackType || ""}`} Stack: </strong>
             {`${i.stack}`}
           </span>
         </span>
         <span className={styles.imageContainer}>
-          <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
+          <a href={i.link} target="_blank" rel="noopener">
+            <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
+          </a>
         </span>
       </div>
     </section>

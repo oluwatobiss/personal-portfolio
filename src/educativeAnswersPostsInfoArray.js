@@ -77,7 +77,7 @@ const educativeAnswersPostsInfoArray = [
     host: "Educative Answers",
     title: "How to edit text on double-click in ReactJS",
     about:
-      "This article shows the steps required to permit editing the text of a page on double-click. To follow along, make sure you've installed Node 10.16 and NPM 5.6 on your system.",
+      "This article shows the steps required to edit the text of a page on double-click. To follow along, make sure you've installed Node 10.16 and NPM 5.6 on your system.",
     publishedDate: "2022-04-15",
     link: "https://www.educative.io/answers/how-to-edit-text-on-double-click-in-reactjs",
   },

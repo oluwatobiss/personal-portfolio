@@ -19,7 +19,7 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
   return (
     <div className={styles.guestPostCard} key={uniqid()}>
       <section className={styles.imageSection}>
-        <a href={i.link} target="_blank">
+        <a href={i.link} target="_blank" rel="noopener">
           <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
         </a>
       </section>
@@ -31,7 +31,7 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
         >
           {i.host}
         </span>
-        <a href={i.link} target="_blank">
+        <a href={i.link} target="_blank" rel="noopener">
           <h2 className={inter.className}>{i.title}</h2>
           <p>{i.about}</p>
         </a>

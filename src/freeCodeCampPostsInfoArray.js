@@ -64,7 +64,7 @@ const freeCodeCampPostsInfoArray = [
     title:
       "The JavaScript Modules Handbook – Complete Guide to ES Modules and Module Bundlers",
     about:
-      "Modules and Module Bundlers are essential components of modern web development. But understanding how they work can quickly become overwhelming. This article will show you all you need to know about ES Modules and Module Bundlers in plain English.",
+      "Modules and Module Bundlers are essential components of modern web development. But understanding how they work can quickly become overwhelming. This handbook will show you all you need to know about ES Modules and Module Bundlers in plain English.",
     publishedDate: "2022-05-11",
     link: "https://www.freecodecamp.org/news/javascript-es-modules-and-module-bundlers/",
   },
