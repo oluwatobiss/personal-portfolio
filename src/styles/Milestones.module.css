@@ -1,0 +1,41 @@
+.pageHeading {
+  font-size: 3.3rem;
+  margin: 20px 5rem;
+}
+
+.milestonesContainer {
+  padding: 3rem 5rem;
+}
+
+.milestoneCard {
+  border-top: 1px solid white;
+  display: grid;
+  grid-template-columns: 10% 80%;
+  min-height: 70px;
+}
+
+.milestoneIcon {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.milestoneInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.date {
+  font-size: 0.9rem;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: inherit;
+  margin-top: 5px;
+}
