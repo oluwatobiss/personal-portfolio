@@ -1,10 +1,12 @@
 import uniqid from "uniqid";
 import styles from "@/src/styles/Milestones.module.css";
 import awardsInfoArray from "../awardsInfoArray";
+import personalMilestonesInfoArray from "../personalMilestonesInfoArray";
 
-const allMilestonesInDescOrder = [...awardsInfoArray].sort(
-  (a, b) => Date.parse(b.date) - Date.parse(a.date)
-);
+const allMilestonesInDescOrder = [
+  ...awardsInfoArray,
+  ...personalMilestonesInfoArray,
+].sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
 const milestonesCards = allMilestonesInDescOrder.map((i) => {
   return (

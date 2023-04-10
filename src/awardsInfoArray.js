@@ -1,6 +1,6 @@
 import { GiDiamondTrophy } from "react-icons/gi";
 
-const publicationsInfoArray = [
+const awardsInfoArray = [
   {
     icon: <GiDiamondTrophy />,
     date: "2022-12-02",
@@ -21,4 +21,4 @@ const publicationsInfoArray = [
   },
 ];
 
-export default publicationsInfoArray;
+export default awardsInfoArray;
