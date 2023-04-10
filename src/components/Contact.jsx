@@ -4,9 +4,11 @@ import contactInfoArray from "../contactInfoArray";
 
 const nunito = Nunito({ subsets: ["latin"] });
 const contactSpans = contactInfoArray.map((i) => (
-  <span key={uniqid()}>
-    {i.icon}
-    <h3>{i.name}</h3>
+  <span>
+    <a href={i.link} target="_blank" rel="noopener" key={uniqid()}>
+      {i.icon}
+      <h3>{i.name}</h3>
+    </a>
   </span>
 ));
 
