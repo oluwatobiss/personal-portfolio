@@ -33,6 +33,11 @@
   margin-bottom: 20px;
 }
 
+.projectSection a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .infoSpan {
   padding: 2.5rem;
 }
