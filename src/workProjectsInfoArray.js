@@ -19,6 +19,7 @@ const workProjectsInfoArray = [
     stack: "Microsoft Word, Affinity Suite, Kindle Create",
     imgSrc: cssGridBookProjPic,
     imgAlt: "The CSS Grid Guidebook's image",
+    link: "https://amzn.to/3yQzRdW",
   },
   {
     endDate: 2022,
@@ -32,6 +33,7 @@ const workProjectsInfoArray = [
     stack: "Babel, ReactJS, YouTube API",
     imgSrc: youTubePlaylistProjPic,
     imgAlt: "The React YouTube Playlist project's screenshot",
+    link: "https://www.npmjs.com/package/@codesweetly/react-youtube-playlist",
   },
   {
     endDate: 2022,
@@ -45,6 +47,7 @@ const workProjectsInfoArray = [
     stack: "Microsoft Word, Affinity Suite",
     imgSrc: cssFlexboxBookProjPic,
     imgAlt: "CSS Flexbox book's image",
+    link: "https://amzn.to/3mStkwr",
   },
   {
     endDate: 2022,
@@ -58,6 +61,7 @@ const workProjectsInfoArray = [
     stack: "Affinity Suite",
     imgSrc: visualFlexboxBookProjPic,
     imgAlt: "Visual Flexbox book's image",
+    link: "https://amzn.to/3YVRljz",
   },
   {
     endDate: 2021,
@@ -71,6 +75,7 @@ const workProjectsInfoArray = [
     stack: "Microsoft Word, Affinity Suite",
     imgSrc: reactBookProjPic,
     imgAlt: "The React Explained Clearly book's image",
+    link: "https://amzn.to/3n5pMHt",
   },
   {
     endDate: new Date().getFullYear(),
@@ -84,6 +89,7 @@ const workProjectsInfoArray = [
     stack: "ReactJS, Docusaurus",
     imgSrc: codesweetlyWebsitePic,
     imgAlt: "The CodeSweetly website's screenshot",
+    link: "https://codesweetly.com/",
   },
 ];
 
