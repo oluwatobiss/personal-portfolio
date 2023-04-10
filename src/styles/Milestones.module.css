@@ -9,6 +9,8 @@
 
 .milestoneCard {
   border-top: 1px solid white;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: 10% 80%;
   min-height: 70px;
@@ -28,11 +30,11 @@
   align-items: flex-start;
 }
 
-.date {
+.milestoneInfo span {
   font-size: 0.9rem;
 }
 
-.title {
+.milestoneInfo a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
