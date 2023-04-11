@@ -33,10 +33,11 @@
 
 @media (prefers-color-scheme: light) {
   .nav {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .footer {
-    border-top: 1px solid #000;
+    border-top: 1px solid #fff;
+    color: #fff;
   }
 }

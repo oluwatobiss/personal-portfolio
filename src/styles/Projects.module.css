@@ -59,6 +59,7 @@
   display: inline-block;
   color: #000;
   border: 1px solid #fff;
+  border-bottom: none;
   border-radius: 5px 5px 0 0;
   padding: 0 0.9rem;
   height: 30px;
@@ -128,4 +129,36 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0 25px 25px 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .pageHeading {
+    color: #fff;
+  }
+
+  .projectDate {
+    color: #fff;
+  }
+
+  .projectIcon {
+    color: var(--primary-blue);
+    box-shadow: 0 0 0.5em #ffffff87;
+  }
+
+  .projectCategory {
+    border: none;
+  }
+
+  .projectInfo {
+    border: 1px solid #fff;
+    background-color: #fff;
+  }
+
+  .projectInfo::before {
+    background-color: #fff;
+  }
+
+  .imageContainer {
+    border-left: 1px solid var(--primary-blue);
+  }
 }

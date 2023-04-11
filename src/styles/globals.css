@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+:root {
+  --primary-blue: #002147;
+  --secondary-blue: #e0ffff;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -16,3 +21,9 @@ body {
     color-scheme: dark;
   }
 } */
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--primary-blue);
+  }
+}

@@ -108,20 +108,27 @@
 
 @media (prefers-color-scheme: light) {
   .introSection {
-    background-color: #011b3b;
-    color: #c0ddff;
+    color: var(--secondary-blue);
+  }
+
+  .nonIntroSection h2 {
+    color: #fff;
   }
 
   .projectSection div {
-    border: 1px solid #000;
+    background-color: #fff;
   }
 
   .imageContainer {
-    border-left: 1px solid #000;
+    border-left: 1px solid var(--primary-blue);
   }
 
-  .publicationSection span {
-    border: 1px solid #000;
+  .publicationSection a {
+    color: #fff;
+  }
+
+  .contactSection div {
+    color: #fff;
   }
 }
 
