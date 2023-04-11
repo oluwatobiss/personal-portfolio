@@ -95,8 +95,8 @@
 }
 
 .contactSection a {
-  text-align: center;
   padding: 70px;
+  text-align: center;
   text-decoration: none;
   color: inherit;
 }
@@ -104,6 +104,25 @@
 .contactSection svg {
   width: 100px;
   height: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  .introSection {
+    background-color: #011b3b;
+    color: #c0ddff;
+  }
+
+  .projectSection div {
+    border: 1px solid #000;
+  }
+
+  .imageContainer {
+    border-left: 1px solid #000;
+  }
+
+  .publicationSection span {
+    border: 1px solid #000;
+  }
 }
 
 /* Enable hover only on non-touch devices */

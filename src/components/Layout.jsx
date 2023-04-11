@@ -12,7 +12,8 @@ export default function Layout({ children }) {
       <Head>
         <meta name="description" content="Oluwatobi Sofela's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="color-scheme" content="dark light" />
+        {/* <meta name="color-scheme" content="light dark" /> */}
+        <meta name="color-scheme" content="light" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className={`${nunito.className} ${styles.nav}`}>

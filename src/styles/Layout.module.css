@@ -5,6 +5,7 @@
   grid-template-columns: 15% 1fr 10%;
   width: 100vw;
   padding: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 255, 0.5);
   backdrop-filter: blur(7px);
   z-index: 50;
@@ -28,4 +29,14 @@
   padding: 25px;
   text-align: center;
   font-size: 0.8em;
+}
+
+@media (prefers-color-scheme: light) {
+  .nav {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .footer {
+    border-top: 1px solid #000;
+  }
 }
