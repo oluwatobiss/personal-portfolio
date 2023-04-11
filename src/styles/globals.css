@@ -26,4 +26,8 @@ body {
   body {
     background-color: var(--primary-blue);
   }
+
+  h1 {
+    color: #fff;
+  }
 }

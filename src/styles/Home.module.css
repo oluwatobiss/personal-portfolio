@@ -107,7 +107,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .introSection {
+  .introSection,
+  .introSection h1 {
     color: var(--secondary-blue);
   }
 
