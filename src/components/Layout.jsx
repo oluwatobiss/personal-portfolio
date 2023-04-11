@@ -3,12 +3,19 @@ import Link from "next/link";
 import styles from "@/src/styles/Layout.module.css";
 import { Cairo_Play, Inter, Nunito } from "next/font/google";
 import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
+import { useEffect } from "react";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
+  function handleClick(e) {
+    const themeOptions =
+      e.currentTarget.parentElement.querySelector(".theme-options");
+    themeOptions.classList.toggle("hideThemeModal");
+  }
+
   return (
     <div>
       <Head>
@@ -29,10 +36,17 @@ export default function Layout({ children }) {
             <Link href="/milestones">Milestones</Link>
           </span>
           <span className={styles.theme}>
-            <button type="button" title="Theme" className={styles.themeNavBtn}>
+            <button
+              type="button"
+              title="Theme"
+              className={styles.themeNavBtn}
+              onClick={handleClick}
+            >
               <MdLightMode />
             </button>
-            <div className={styles.themeOptions}>
+            <div
+              className={`${styles.themeOptions} theme-options hideThemeModal`}
+            >
               <button
                 type="button"
                 className={`${styles.themeOption} ${styles.activeTheme}`}
