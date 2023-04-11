@@ -41,3 +41,10 @@
   color: inherit;
   margin-top: 5px;
 }
+
+@media (prefers-color-scheme: light) {
+  .milestoneCard {
+    border-top: 1px solid var(--primary-blue);
+    background-color: #fff;
+  }
+}
