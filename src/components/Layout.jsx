@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "@/src/styles/Layout.module.css";
 import { Cairo_Play, Inter, Nunito } from "next/font/google";
+import { MdOutlineLightMode } from "react-icons/md";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -21,12 +22,14 @@ export default function Layout({ children }) {
         <Link href="/" className={`${styles.navLogo} ${cairoPlay.className}`}>
           Oluwatobi
         </Link>
-        <span className={styles.navRoutes}>
+        <span className={styles.navRoutesAndTheme}>
           <Link href="/projects">Projects</Link>
           <Link href="/guest-posts">Guest Posts</Link>
           <Link href="/milestones">Milestones</Link>
+          <span>
+            <MdOutlineLightMode />
+          </span>
         </span>
-        <span className={styles.navTheme}>th</span>
       </nav>
       <main className={inter.className}>{children}</main>
       <footer className={`${inter.className} ${styles.footer}`}>
