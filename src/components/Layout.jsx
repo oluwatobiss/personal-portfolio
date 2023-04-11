@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "@/src/styles/Layout.module.css";
 import { Cairo_Play, Inter, Nunito } from "next/font/google";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -23,11 +23,32 @@ export default function Layout({ children }) {
           Oluwatobi
         </Link>
         <span className={styles.navRoutesAndTheme}>
-          <Link href="/projects">Projects</Link>
-          <Link href="/guest-posts">Guest Posts</Link>
-          <Link href="/milestones">Milestones</Link>
-          <span>
-            <MdOutlineLightMode />
+          <span className={styles.routes}>
+            <Link href="/projects">Projects</Link>
+            <Link href="/guest-posts">Guest Posts</Link>
+            <Link href="/milestones">Milestones</Link>
+          </span>
+          <span className={styles.theme}>
+            <button type="button" title="Theme" className={styles.themeNavBtn}>
+              <MdLightMode />
+            </button>
+            <div className={styles.themeOptions}>
+              <button
+                type="button"
+                className={`${styles.themeOption} ${styles.activeTheme}`}
+              >
+                <MdLightMode />
+                <span>Light</span>
+              </button>
+              <button type="button" className={styles.themeOption}>
+                <MdDarkMode />
+                <span>Dark</span>
+              </button>
+              <button type="button" className={styles.themeOption}>
+                <MdContrast />
+                <span>System</span>
+              </button>
+            </div>
           </span>
         </span>
       </nav>

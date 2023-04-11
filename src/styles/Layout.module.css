@@ -20,32 +20,73 @@
   font-weight: 700;
 }
 
-.navRoutesAndTheme,
-.navRoutesAndTheme span {
+.navRoutesAndTheme {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.navRoutesAndTheme a {
+.routes a {
   margin-left: 1.5rem;
   font-weight: 700;
 }
 
-.navRoutesAndTheme a:hover {
+.routes a:hover {
   color: #e53a35;
 }
 
-.navRoutesAndTheme span {
+.theme {
+  position: relative;
+}
+
+.themeNavBtn {
+  display: flex;
+  border-radius: 50%;
+  border: none;
   margin-left: 1.5rem;
   padding: 7px;
   font-size: 1.5rem;
 }
 
-.navRoutesAndTheme span:hover {
+.theme button:hover {
   cursor: pointer;
-  border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.themeOptions {
+  /* display: none; */
+  position: absolute;
+  right: 0;
+  width: max-content;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.themeOption {
+  display: flex;
+  align-items: center;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.themeOption:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.themeOption span {
+  margin-left: 9px;
+  font-size: 0.9rem;
+}
+
+.activeTheme {
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -61,6 +102,10 @@
   }
 
   .nav a {
+    color: var(--primary-blue);
+  }
+
+  .themeNavBtn {
     color: var(--primary-blue);
   }
 
