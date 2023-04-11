@@ -95,13 +95,10 @@
 }
 
 .contactSection a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.contactSection span {
   text-align: center;
   padding: 70px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .contactSection svg {
