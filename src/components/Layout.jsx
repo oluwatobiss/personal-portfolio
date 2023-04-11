@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/src/styles/Layout.module.css";
-import { Inter, Nunito } from "next/font/google";
+import { Cairo_Play, Inter, Nunito } from "next/font/google";
 
+const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className={`${nunito.className} ${styles.nav}`}>
-        <Link href="/" className={styles.navLogo}>
+        <Link href="/" className={`${styles.navLogo} ${cairoPlay.className}`}>
           Oluwatobi
         </Link>
         <span className={styles.navRoutes}>
