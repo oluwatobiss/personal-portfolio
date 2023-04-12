@@ -1,3 +1,35 @@
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  .projectSection div {
+    background-color: var(--secondary-color);
+  }
+
+  .projectSection a {
+    color: var(--accent-color);
+  }
+
+  .imageContainer {
+    border-left: 1px solid var(--primary-color);
+  }
+}
+
+/**************************************************/
+/* Color scheme when device's theme is dark mode */
+/**************************************************/
+
+@media (prefers-color-scheme: dark) {
+  .projectSection a {
+    color: var(--secondary-color);
+  }
+
+  .imageContainer {
+    border-left: 1px solid var(--secondary-color);
+  }
+}
+
 .introSection {
   background-image: url(../../public/home-intro-image.png);
   background-repeat: no-repeat;
@@ -7,6 +39,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  color: var(--secondary-color);
 }
 
 .introSection div {
@@ -14,7 +47,7 @@
 }
 
 .introSection h1 {
-  font-size: 3.3rem;
+  margin: 0;
 }
 
 .nonIntroSection {
@@ -23,19 +56,19 @@
 
 .nonIntroSection h2 {
   margin-bottom: 20px;
+  color: var(--secondary-color);
 }
 
 .projectSection div {
   display: grid;
   grid-template-columns: 65% 1fr;
-  border: 1px solid #fff;
+  border: 1px solid var(--secondary-color);
   border-radius: 25px;
   margin-bottom: 20px;
 }
 
 .projectSection a {
   text-decoration: none;
-  color: inherit;
 }
 
 .infoSpan {
@@ -50,10 +83,6 @@
   font-size: 0.8em;
   display: inline-block;
   margin-top: 10px;
-}
-
-.imageContainer {
-  border-left: 1px solid #fff;
 }
 
 .imageContainer img {
@@ -71,14 +100,14 @@
 
 .publicationSection a {
   text-decoration: none;
-  color: inherit;
+  color: var(--secondary-color);
 }
 
 .publicationSection span {
   display: inline-block;
   width: 100%;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 70px;
 }
@@ -92,6 +121,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
+  color: var(--secondary-color);
 }
 
 .contactSection a {
@@ -104,33 +134,6 @@
 .contactSection svg {
   width: 100px;
   height: auto;
-}
-
-@media (prefers-color-scheme: light) {
-  .introSection,
-  .introSection h1 {
-    color: var(--secondary-blue);
-  }
-
-  .nonIntroSection h2 {
-    color: #fff;
-  }
-
-  .projectSection div {
-    background-color: #fff;
-  }
-
-  .imageContainer {
-    border-left: 1px solid var(--primary-blue);
-  }
-
-  .publicationSection a {
-    color: #fff;
-  }
-
-  .contactSection div {
-    color: #fff;
-  }
 }
 
 /* Enable hover only on non-touch devices */

@@ -10,7 +10,10 @@ const allMilestonesInDescOrder = [
 
 const milestonesCards = allMilestonesInDescOrder.map((i) => {
   return (
-    <section className={styles.milestoneCard} key={uniqid()}>
+    <section
+      className={`${styles.milestoneCard} card-container milestone-card`}
+      key={uniqid()}
+    >
       <span className={styles.milestoneIcon}>{i.icon}</span>
       <span className={styles.milestoneInfo}>
         <span>{i.date}</span>

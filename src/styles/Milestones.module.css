@@ -1,3 +1,25 @@
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  .milestoneCard {
+    border-top: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+/**************************************************/
+/* Color scheme when device's theme is dark mode */
+/**************************************************/
+
+@media (prefers-color-scheme: dark) {
+  .milestoneCard {
+    border-top: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}
+
 .pageHeading {
   font-size: 3.3rem;
   margin: 20px 5rem;
@@ -8,7 +30,6 @@
 }
 
 .milestoneCard {
-  border-top: 1px solid white;
   padding-top: 30px;
   padding-bottom: 30px;
   display: grid;
@@ -40,11 +61,4 @@
   font-weight: 500;
   color: inherit;
   margin-top: 5px;
-}
-
-@media (prefers-color-scheme: light) {
-  .milestoneCard {
-    border-top: 1px solid var(--primary-blue);
-    background-color: #fff;
-  }
 }

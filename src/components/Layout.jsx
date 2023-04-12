@@ -37,10 +37,37 @@ export default function Layout({ children }) {
   }
 
   function handleThemeModalClick(e) {
+    const root = document.documentElement;
     const themeOptions = document.querySelectorAll(".theme-option");
     const clickedThemeOption = e.target.closest(".theme-option");
+    const classesOfClickedTheme = [...clickedThemeOption.classList];
+
     themeOptions.forEach((i) => i.classList.remove("active-theme"));
     clickedThemeOption.classList.add("active-theme");
+
+    if (classesOfClickedTheme.includes("light")) {
+      console.log("Light theme button clicked");
+      root.classList.add("light");
+      root.classList.remove("dark");
+      root.classList.remove("device");
+      console.log(root.classList);
+    }
+
+    if (classesOfClickedTheme.includes("dark")) {
+      console.log("Dark theme button clicked");
+      root.classList.remove("light");
+      root.classList.add("dark");
+      root.classList.remove("device");
+      console.log(root.classList);
+    }
+
+    if (classesOfClickedTheme.includes("system")) {
+      console.log("System theme button clicked");
+      root.classList.remove("light");
+      root.classList.remove("dark");
+      root.classList.add("device");
+      console.log(root.classList);
+    }
   }
 
   return (
@@ -48,8 +75,7 @@ export default function Layout({ children }) {
       <Head>
         <meta name="description" content="Oluwatobi Sofela's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <meta name="color-scheme" content="light dark" /> */}
-        <meta name="color-scheme" content="light" />
+        <meta name="color-scheme" content="dark light" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className={`${nunito.className} ${styles.nav}`}>
@@ -77,21 +103,21 @@ export default function Layout({ children }) {
             >
               <button
                 type="button"
-                className={`${styles.themeOption} active-theme theme-option`}
+                className={`${styles.themeOption} active-theme theme-option light`}
               >
                 <MdLightMode />
                 <span>Light</span>
               </button>
               <button
                 type="button"
-                className={`${styles.themeOption} theme-option`}
+                className={`${styles.themeOption} theme-option dark`}
               >
                 <MdDarkMode />
                 <span>Dark</span>
               </button>
               <button
                 type="button"
-                className={`${styles.themeOption} theme-option`}
+                className={`${styles.themeOption} theme-option system`}
               >
                 <MdContrast />
                 <span>System</span>

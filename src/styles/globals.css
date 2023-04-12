@@ -4,9 +4,94 @@
   margin: 0;
 }
 
+/****************************************************/
+/* Default Color Scheme */
+/****************************************************/
+
 :root {
-  --primary-blue: #002147;
-  --secondary-blue: #e0ffff;
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+/**********************************************/
+/* Color scheme when <html> has a light class */
+/**********************************************/
+
+:root.light {
+  --primary-color: #002147;
+  --secondary-color: #fff;
+  --accent-color: #000;
+}
+
+:root.light .card-container {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+:root.light .card-container a {
+  color: var(--accent-color);
+}
+
+:root.light .card-container .proj-img-container {
+  border-left: 1px solid var(--primary-color);
+}
+
+:root.light .guest-post-card {
+  border: 1px solid var(--primary-color);
+}
+
+:root.light .guest-post-img-container {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+:root.light .published-date {
+  border-top: 1px solid var(--primary-color);
+}
+
+/**********************************************/
+/* Color scheme when <html> has a dark class */
+/**********************************************/
+
+:root.dark {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+:root.dark .card-container {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+:root.dark .card-container a {
+  color: var(--secondary-color);
+}
+
+:root.dark .card-container .proj-img-container {
+  border-left: 1px solid var(--secondary-color);
+}
+
+:root.dark .guest-post-card {
+  border: 1px solid var(--secondary-color);
+}
+
+:root.dark .published-date {
+  border-top: 1px solid var(--secondary-color);
+}
+
+:root.dark .milestone-card {
+  border-top: 1px solid var(--secondary-color);
+}
+
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: #002147;
+    --secondary-color: #fff;
+    --accent-color: #000;
+  }
 }
 
 html,
@@ -14,6 +99,10 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   height: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
 }
 
 .hideThemeModal {
@@ -24,18 +113,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--primary-blue);
-  }
-
-  h1 {
-    color: #fff;
-  }
+h1 {
+  margin: 20px 5rem;
+  font-size: 3.3rem;
+  color: var(--secondary-color);
 }

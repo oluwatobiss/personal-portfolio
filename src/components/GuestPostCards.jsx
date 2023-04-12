@@ -17,8 +17,11 @@ const allGuestPostsInDescOrder = [
 
 const guestPostCards = allGuestPostsInDescOrder.map((i) => {
   return (
-    <div className={styles.guestPostCard} key={uniqid()}>
-      <section className={styles.imageSection}>
+    <div
+      className={`${styles.guestPostCard} card-container guest-post-card`}
+      key={uniqid()}
+    >
+      <section className={`${styles.imageSection} guest-post-img-container`}>
         <a href={i.link} target="_blank" rel="noopener">
           <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
         </a>
@@ -35,7 +38,9 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
           <h2 className={inter.className}>{i.title}</h2>
           <p>{i.about}</p>
         </a>
-        <div className={styles.publishedDate}>{i.publishedDate}</div>
+        <div className={`${styles.publishedDate} published-date`}>
+          {i.publishedDate}
+        </div>
       </section>
     </div>
   );

@@ -15,7 +15,7 @@ for (const project of educationProjectsInfoArray) {
 }
 
 const selectedProjectDivs = selectedProjects.map((i) => (
-  <div key={uniqid()}>
+  <div key={uniqid()} className="card-container">
     <span className={styles.infoSpan}>
       <a href={i.link} target="_blank" rel="noopener">
         <h3>{i.name}</h3>
@@ -26,7 +26,7 @@ const selectedProjectDivs = selectedProjects.map((i) => (
         {i.stack}
       </span>
     </span>
-    <span className={styles.imageContainer}>
+    <span className={`${styles.imageContainer} proj-img-container`}>
       <a href={i.link} target="_blank" rel="noopener">
         <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
       </a>
