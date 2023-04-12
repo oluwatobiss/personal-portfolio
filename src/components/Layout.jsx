@@ -40,33 +40,32 @@ export default function Layout({ children }) {
     const root = document.documentElement;
     const themeOptions = document.querySelectorAll(".theme-option");
     const clickedThemeOption = e.target.closest(".theme-option");
-    const classesOfClickedTheme = [...clickedThemeOption.classList];
 
-    themeOptions.forEach((i) => i.classList.remove("active-theme"));
-    clickedThemeOption.classList.add("active-theme");
+    if (clickedThemeOption) {
+      const classesOfClickedTheme = [...clickedThemeOption.classList];
+      themeOptions.forEach((i) => i.classList.remove("active-theme"));
+      clickedThemeOption.classList.add("active-theme");
 
-    if (classesOfClickedTheme.includes("light")) {
-      console.log("Light theme button clicked");
-      root.classList.add("light");
-      root.classList.remove("dark");
-      root.classList.remove("device");
-      console.log(root.classList);
-    }
+      if (classesOfClickedTheme.includes("light")) {
+        root.classList.add("light");
+        root.classList.remove("dark");
+        root.classList.remove("device");
+        e.currentTarget.classList.add("hideThemeModal");
+      }
 
-    if (classesOfClickedTheme.includes("dark")) {
-      console.log("Dark theme button clicked");
-      root.classList.remove("light");
-      root.classList.add("dark");
-      root.classList.remove("device");
-      console.log(root.classList);
-    }
+      if (classesOfClickedTheme.includes("dark")) {
+        root.classList.remove("light");
+        root.classList.add("dark");
+        root.classList.remove("device");
+        e.currentTarget.classList.add("hideThemeModal");
+      }
 
-    if (classesOfClickedTheme.includes("system")) {
-      console.log("System theme button clicked");
-      root.classList.remove("light");
-      root.classList.remove("dark");
-      root.classList.add("device");
-      console.log(root.classList);
+      if (classesOfClickedTheme.includes("system")) {
+        root.classList.remove("light");
+        root.classList.remove("dark");
+        root.classList.add("device");
+        e.currentTarget.classList.add("hideThemeModal");
+      }
     }
   }
 
@@ -103,7 +102,7 @@ export default function Layout({ children }) {
             >
               <button
                 type="button"
-                className={`${styles.themeOption} active-theme theme-option light`}
+                className={`${styles.themeOption} theme-option light`}
               >
                 <MdLightMode />
                 <span>Light</span>
@@ -117,7 +116,7 @@ export default function Layout({ children }) {
               </button>
               <button
                 type="button"
-                className={`${styles.themeOption} theme-option system`}
+                className={`${styles.themeOption} active-theme theme-option system`}
               >
                 <MdContrast />
                 <span>System</span>
