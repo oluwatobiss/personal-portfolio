@@ -20,6 +20,10 @@ body {
   visibility: hidden;
 }
 
+.theme-modal .active-theme {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

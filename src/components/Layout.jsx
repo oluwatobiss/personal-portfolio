@@ -11,29 +11,36 @@ const nunito = Nunito({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
   function handleThemeNavBtnClick(e) {
-    const themeOptionsModal =
-      e.currentTarget.parentElement.querySelector(".theme-options");
-    themeOptionsModal.classList.toggle("hideThemeModal");
+    const themeModal =
+      e.currentTarget.parentElement.querySelector(".theme-modal");
+    themeModal.classList.toggle("hideThemeModal");
   }
 
   function handleLayoutClick(e) {
     const layoutContainer = e.currentTarget;
-    const themeOptionsModal = layoutContainer.querySelector(".theme-options");
-    const themeOptionsIsHidden = [...themeOptionsModal.classList].includes(
+    const themeModal = layoutContainer.querySelector(".theme-modal");
+    const themeModalIsHidden = [...themeModal.classList].includes(
       "hideThemeModal"
     );
     const clickedThemeNavBtn = e.target.closest(".theme-nav-btn");
-    const clickedThemeOptionModal = e.target.closest(".theme-options");
+    const clickedThemeModal = e.target.closest(".theme-modal");
     const clickedThemeOption = e.target.closest(".theme-option");
 
     if (
-      !themeOptionsIsHidden &&
+      !themeModalIsHidden &&
       !clickedThemeNavBtn &&
-      !clickedThemeOptionModal &&
+      !clickedThemeModal &&
       !clickedThemeOption
     ) {
-      themeOptionsModal.classList.add("hideThemeModal");
+      themeModal.classList.add("hideThemeModal");
     }
+  }
+
+  function handleThemeModalClick(e) {
+    const themeOptions = document.querySelectorAll(".theme-option");
+    const clickedThemeOption = e.target.closest(".theme-option");
+    themeOptions.forEach((i) => i.classList.remove("active-theme"));
+    clickedThemeOption.classList.add("active-theme");
   }
 
   return (
@@ -65,11 +72,12 @@ export default function Layout({ children }) {
               <MdLightMode />
             </button>
             <div
-              className={`${styles.themeOptions} theme-options hideThemeModal`}
+              className={`${styles.themeModal} theme-modal hideThemeModal`}
+              onClick={handleThemeModalClick}
             >
               <button
                 type="button"
-                className={`${styles.themeOption} ${styles.activeTheme} theme-option`}
+                className={`${styles.themeOption} active-theme theme-option`}
               >
                 <MdLightMode />
                 <span>Light</span>
