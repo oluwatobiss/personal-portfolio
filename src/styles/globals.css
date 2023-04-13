@@ -36,6 +36,10 @@
   color: var(--primary-color);
 }
 
+:root.light .theme-nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 :root.light .theme-modal {
   background-color: var(--secondary-color);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -95,6 +99,10 @@
 
 :root.dark .theme-nav-btn {
   color: var(--secondary-color);
+}
+
+:root.dark .theme-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 :root.dark .theme-modal {
