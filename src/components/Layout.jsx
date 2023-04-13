@@ -1,15 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "@/src/styles/Layout.module.css";
+import { useState } from "react";
 import { Cairo_Play, Inter, Nunito } from "next/font/google";
 import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
-import { useEffect } from "react";
+import styles from "@/src/styles/Layout.module.css";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
+  const [navThemeIcon, setNavThemeIcon] = useState(<MdDarkMode />);
   function handleThemeNavBtnClick(e) {
     const themeModal =
       e.currentTarget.parentElement.querySelector(".theme-modal");
@@ -25,7 +26,6 @@ export default function Layout({ children }) {
     const clickedThemeNavBtn = e.target.closest(".theme-nav-btn");
     const clickedThemeModal = e.target.closest(".theme-modal");
     const clickedThemeOption = e.target.closest(".theme-option");
-
     if (
       !themeModalIsHidden &&
       !clickedThemeNavBtn &&
@@ -51,6 +51,7 @@ export default function Layout({ children }) {
         root.classList.remove("dark");
         root.classList.remove("device");
         e.currentTarget.classList.add("hideThemeModal");
+        setNavThemeIcon(<MdLightMode />);
       }
 
       if (classesOfClickedTheme.includes("dark")) {
@@ -58,6 +59,7 @@ export default function Layout({ children }) {
         root.classList.add("dark");
         root.classList.remove("device");
         e.currentTarget.classList.add("hideThemeModal");
+        setNavThemeIcon(<MdDarkMode />);
       }
 
       if (classesOfClickedTheme.includes("system")) {
@@ -65,6 +67,7 @@ export default function Layout({ children }) {
         root.classList.remove("dark");
         root.classList.add("device");
         e.currentTarget.classList.add("hideThemeModal");
+        setNavThemeIcon(<MdContrast />);
       }
     }
   }
@@ -94,7 +97,7 @@ export default function Layout({ children }) {
               className={`${styles.themeNavBtn} theme-nav-btn`}
               onClick={handleThemeNavBtnClick}
             >
-              <MdLightMode />
+              {navThemeIcon}
             </button>
             <div
               className={`${styles.themeModal} theme-modal hideThemeModal`}
@@ -109,14 +112,14 @@ export default function Layout({ children }) {
               </button>
               <button
                 type="button"
-                className={`${styles.themeOption} theme-option dark`}
+                className={`${styles.themeOption} theme-option active-theme dark`}
               >
                 <MdDarkMode />
                 <span>Dark</span>
               </button>
               <button
                 type="button"
-                className={`${styles.themeOption} active-theme theme-option system`}
+                className={`${styles.themeOption} theme-option system`}
               >
                 <MdContrast />
                 <span>System</span>
