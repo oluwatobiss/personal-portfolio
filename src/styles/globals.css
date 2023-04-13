@@ -23,6 +23,20 @@
   --accent-color: #000;
 }
 
+:root.light .theme-modal {
+  background-color: var(--secondary-color);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+:root.light .theme-option {
+  color: var(--accent-color);
+}
+
+:root.light .theme-modal .active-theme {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 :root.light .card-container {
   background-color: var(--secondary-color);
   color: var(--accent-color);
@@ -55,6 +69,20 @@
 :root.dark {
   --primary-color: #000;
   --secondary-color: #fff;
+}
+
+:root.dark .theme-modal {
+  background-color: var(--primary-color);
+  box-shadow: rgba(241, 225, 218, 0.12) 0px 2px 4px 0px,
+    rgba(241, 225, 218, 0.32) 0px 2px 16px 0px;
+}
+
+:root.dark .theme-option {
+  color: var(--secondary-color);
+}
+
+:root.dark .theme-modal .active-theme {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 :root.dark .card-container {
@@ -92,6 +120,20 @@
     --secondary-color: #fff;
     --accent-color: #000;
   }
+
+  .theme-modal .active-theme {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+/**************************************************/
+/* Color scheme when device's theme is dark mode */
+/**************************************************/
+
+@media (prefers-color-scheme: dark) {
+  .theme-modal .active-theme {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 html,
@@ -107,10 +149,6 @@ body {
 
 .hideThemeModal {
   display: none;
-}
-
-.theme-modal .active-theme {
-  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 h1 {

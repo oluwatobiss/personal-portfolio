@@ -1,3 +1,27 @@
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  .themeModal {
+    background-color: var(--secondary-color);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+}
+
+/**************************************************/
+/* Color scheme when device's theme is dark mode */
+/**************************************************/
+
+@media (prefers-color-scheme: dark) {
+  .themeModal {
+    background-color: var(--primary-color);
+    box-shadow: rgba(241, 225, 218, 0.12) 0px 2px 4px 0px,
+      rgba(241, 225, 218, 0.32) 0px 2px 16px 0px;
+  }
+}
+
 .nav {
   width: 100vw;
   padding: 0.7rem 2.6rem 0.7rem 1.7rem;
@@ -62,10 +86,7 @@
   margin-top: 7px;
   padding: 5px;
   width: 120px;
-  background-color: var(--secondary-color);
   border-radius: 5px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .themeOption {
