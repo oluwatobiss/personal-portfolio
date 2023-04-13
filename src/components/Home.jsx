@@ -1,4 +1,3 @@
-import Layout from "./Layout";
 import Head from "next/head";
 import SelectedProjects from "./SelectedProjects";
 import Publications from "./Publications";
@@ -10,7 +9,7 @@ const nunito = Nunito({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>Oluwatobi Sofela - A JavaScript Front End Web Developer</title>
       </Head>
@@ -36,6 +35,6 @@ export default function Home() {
         <h2>Contact</h2>
         {<Contact />}
       </section>
-    </Layout>
+    </>
   );
 }
