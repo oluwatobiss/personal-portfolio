@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Inter } from "next/font/google";
-import styles from "@/src/styles/Layout.module.css";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
@@ -35,10 +34,7 @@ export default function Layout({ children }) {
       </Head>
       <Navbar />
       <main className={inter.className}>{children}</main>
-      <footer className={`${inter.className} ${styles.footer}`}>
-        Copyright © {new Date().getFullYear()} Oluwatobi Sofela • All rights
-        reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
