@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { useState } from "react";
-import { Cairo_Play, Nunito } from "next/font/google";
+import { Cairo_Play, Nunito, Inter } from "next/font/google";
 import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
 import styles from "@/src/styles/Navbar.module.css";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Navbar() {
   const [navThemeIcon, setNavThemeIcon] = useState(<MdDarkMode />);
@@ -57,7 +58,7 @@ export default function Navbar() {
         Oluwatobi
       </Link>
       <span className={styles.navRoutesAndTheme}>
-        <span className={styles.routes}>
+        <span className={`${styles.routes} ${inter.className}`}>
           <Link href="/projects">Projects</Link>
           <Link href="/guest-posts">Guest Posts</Link>
           <Link href="/milestones">Milestones</Link>
