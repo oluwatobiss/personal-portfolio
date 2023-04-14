@@ -1,24 +1,14 @@
 .nav {
-  width: 100vw;
-  padding: 0.7rem 1.5rem;
   position: sticky;
   top: 0;
+}
+
+.topNSidebarContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(17, 17, 17, 0.91);
   backdrop-filter: blur(7px);
-  z-index: 50;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menuIcon {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-}
-
-.navLogo {
-  text-decoration: none;
-  font-size: 1.62rem;
-  font-weight: 700;
 }
 
 /* Tablet and Smaller Desktop */
