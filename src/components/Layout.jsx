@@ -1,5 +1,6 @@
 import Head from "next/head";
 import DesktopNavbar from "./DesktopNavbar";
+import MobileNavbar from "./MobileNavbar";
 import Footer from "./Footer";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -33,6 +34,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DesktopNavbar />
+      <MobileNavbar />
       <main className={inter.className}>{children}</main>
       <Footer />
     </div>
