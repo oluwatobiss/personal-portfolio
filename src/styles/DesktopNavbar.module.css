@@ -16,8 +16,11 @@
     color: var(--primary-color);
   }
 
-  .themeNavBtn:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+  /* Enable hover only on non-touch devices */
+  @media (hover: hover) and (pointer: fine) {
+    .themeNavBtn:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 
   .themeModal {
@@ -45,8 +48,11 @@
     color: var(--secondary-color);
   }
 
-  .themeNavBtn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  /* Enable hover only on non-touch devices */
+  @media (hover: hover) and (pointer: fine) {
+    .themeNavBtn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
   .themeModal {
@@ -87,10 +93,6 @@
   font-weight: 600;
 }
 
-.routes a:hover {
-  color: #e53a35;
-}
-
 .theme {
   position: relative;
 }
@@ -103,10 +105,6 @@
   padding: 7px;
   font-size: 1.5rem;
   background-color: transparent;
-}
-
-.themeNavBtn:hover {
-  cursor: pointer;
 }
 
 .themeModal {
@@ -128,14 +126,28 @@
   background-color: transparent;
 }
 
-.themeOption:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .themeOption span {
   margin-left: 9px;
   font-size: 0.9rem;
+}
+
+/******************************************/
+/* Enable hover only on non-touch devices */
+/******************************************/
+
+@media (hover: hover) and (pointer: fine) {
+  .routes a:hover {
+    color: #e53a35;
+  }
+
+  .themeNavBtn:hover {
+    cursor: pointer;
+  }
+
+  .themeOption:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Mobile */

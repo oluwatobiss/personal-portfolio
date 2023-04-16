@@ -58,7 +58,7 @@ export default function DesktopNavbar() {
         Oluwatobi
       </Link>
       <span className={styles.navRoutesAndTheme}>
-        <span className={`${styles.routes} ${inter.className}`}>
+        <span className={`${styles.routes} ${inter.className} routes`}>
           <Link href="/projects">Projects</Link>
           <Link href="/guest-posts">Guest Posts</Link>
           <Link href="/milestones">Milestones</Link>

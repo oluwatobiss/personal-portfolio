@@ -4,9 +4,9 @@
   margin: 0;
 }
 
-/****************************************************/
+/************************/
 /* Default Color Scheme */
-/****************************************************/
+/************************/
 
 :root {
   --primary-color: #000;
@@ -20,7 +20,8 @@
 :root.light {
   --primary-color: #002147;
   --secondary-color: #fff;
-  --accent-color: #000;
+  --accent-color: #e53a35;
+  --text-color: #000;
 }
 
 :root.light nav {
@@ -36,10 +37,6 @@
   color: var(--primary-color);
 }
 
-:root.light .theme-nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 :root.light .theme-modal {
   background-color: var(--secondary-color);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -47,7 +44,7 @@
 }
 
 :root.light .theme-option {
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
 :root.light .theme-modal .active-theme {
@@ -56,11 +53,11 @@
 
 :root.light .card-container {
   background-color: var(--secondary-color);
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
 :root.light .card-container a {
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 
 :root.light .card-container .proj-img-container {
@@ -86,6 +83,7 @@
 :root.dark {
   --primary-color: #000;
   --secondary-color: #fff;
+  --accent-color: #e53a35;
 }
 
 :root.dark nav {
@@ -99,10 +97,6 @@
 
 :root.dark .theme-nav-btn {
   color: var(--secondary-color);
-}
-
-:root.dark .theme-nav-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 :root.dark .theme-modal {
@@ -152,7 +146,7 @@
   :root {
     --primary-color: #002147;
     --secondary-color: #fff;
-    --accent-color: #000;
+    --text-color: #000;
   }
 
   .theme-modal .active-theme {
@@ -193,4 +187,26 @@ h1 {
 
 aside.hide-mobile-sidebar {
   display: none;
+}
+
+/******************************************/
+/* Enable hover only on non-touch devices */
+/******************************************/
+
+@media (hover: hover) and (pointer: fine) {
+  :root.light .routes a:hover {
+    color: var(--accent-color);
+  }
+
+  :root.light .theme-nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  :root.dark .routes a:hover {
+    color: var(--accent-color);
+  }
+
+  :root.dark .theme-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
