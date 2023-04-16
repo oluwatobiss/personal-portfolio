@@ -190,3 +190,7 @@ h1 {
   font-size: 3.3rem;
   color: var(--secondary-color);
 }
+
+aside.mobile-sidebar {
+  display: none;
+}

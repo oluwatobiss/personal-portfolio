@@ -52,7 +52,7 @@ export default function MobileMenuSidebar() {
   }
 
   return (
-    <aside className={`${nunito.className} ${styles.aside}`}>
+    <aside className={`${nunito.className} ${styles.aside} mobile-sidebar`}>
       <div className={`${styles.routes} ${inter.className}`}>
         <Link href="/projects">Projects</Link>
         <Link href="/guest-posts">Guest Posts</Link>
@@ -60,7 +60,7 @@ export default function MobileMenuSidebar() {
       </div>
       <div className={styles.theme}>
         <div
-          className={`${styles.themeModal} theme-modal hideThemeModal`}
+          className={`${styles.themeModal} theme-modal`}
           onClick={handleThemeModalClick}
         >
           <button

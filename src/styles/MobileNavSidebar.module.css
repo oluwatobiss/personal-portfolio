@@ -6,19 +6,23 @@
   height: 89vh;
   display: grid;
   align-content: space-between;
+  background-color: rgba(17, 17, 17, 0.91);
+  backdrop-filter: blur(7px);
 }
 
 .routes a {
   display: block;
   text-decoration: none;
   margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .themeNavBtn {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 100%;
   border: none;
   border-top: 1px solid white;
@@ -28,4 +32,25 @@
 .themeNavBtnIcon {
   margin-right: 5px;
   display: flex;
+}
+
+.themeModal {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.themeOption {
+  display: flex;
+  align-items: center;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.1rem;
+}
+
+.themeOption span {
+  margin-left: 9px;
 }
