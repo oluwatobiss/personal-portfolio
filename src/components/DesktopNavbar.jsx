@@ -13,7 +13,7 @@ export default function DesktopNavbar() {
   function handleThemeNavBtnClick(e) {
     const themeModal =
       e.currentTarget.parentElement.querySelector(".theme-modal");
-    themeModal.classList.toggle("hideThemeModal");
+    themeModal.classList.toggle("hide-theme-modal");
   }
 
   function handleThemeModalClick(e) {
@@ -30,7 +30,7 @@ export default function DesktopNavbar() {
         root.classList.add("light");
         root.classList.remove("dark");
         root.classList.remove("device");
-        e.currentTarget.classList.add("hideThemeModal");
+        e.currentTarget.classList.add("hide-theme-modal");
         setNavThemeIcon(<MdLightMode />);
       }
 
@@ -38,7 +38,7 @@ export default function DesktopNavbar() {
         root.classList.remove("light");
         root.classList.add("dark");
         root.classList.remove("device");
-        e.currentTarget.classList.add("hideThemeModal");
+        e.currentTarget.classList.add("hide-theme-modal");
         setNavThemeIcon(<MdDarkMode />);
       }
 
@@ -46,7 +46,7 @@ export default function DesktopNavbar() {
         root.classList.remove("light");
         root.classList.remove("dark");
         root.classList.add("device");
-        e.currentTarget.classList.add("hideThemeModal");
+        e.currentTarget.classList.add("hide-theme-modal");
         setNavThemeIcon(<MdContrast />);
       }
     }
@@ -73,7 +73,7 @@ export default function DesktopNavbar() {
             {navThemeIcon}
           </button>
           <div
-            className={`${styles.themeModal} theme-modal hideThemeModal`}
+            className={`${styles.themeModal} theme-modal hide-theme-modal`}
             onClick={handleThemeModalClick}
           >
             <button

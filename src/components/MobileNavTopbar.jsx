@@ -6,9 +6,10 @@ import styles from "@/src/styles/MobileNavTopbar.module.css";
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 
 export default function MobileMenuTopbar() {
-  function handleMenuIconClick() {
-    const mobileSidebar = document.querySelector("aside");
-    mobileSidebar.classList.toggle("mobile-sidebar");
+  function handleMenuIconClick(e) {
+    const mobileSidebar =
+      e.currentTarget.parentElement.parentElement.querySelector("aside");
+    mobileSidebar.classList.toggle("hide-mobile-sidebar");
   }
 
   return (

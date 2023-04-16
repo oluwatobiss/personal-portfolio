@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     const layoutContainer = e.currentTarget;
     const themeModal = layoutContainer.querySelector(".theme-modal");
     const themeModalIsHidden = [...themeModal.classList].includes(
-      "hideThemeModal"
+      "hide-theme-modal"
     );
     const clickedThemeNavBtn = e.target.closest(".theme-nav-btn");
     const clickedThemeModal = e.target.closest(".theme-modal");
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
       !clickedThemeModal &&
       !clickedThemeOption
     ) {
-      themeModal.classList.add("hideThemeModal");
+      themeModal.classList.add("hide-theme-modal");
     }
   }
 

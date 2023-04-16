@@ -12,7 +12,7 @@ export default function MobileMenuSidebar() {
   function handleThemeNavBtnClick(e) {
     const themeModal =
       e.currentTarget.parentElement.querySelector(".theme-modal");
-    themeModal.classList.toggle("hideThemeModal");
+    themeModal.classList.toggle("hide-theme-modal");
   }
 
   function handleThemeModalClick(e) {
@@ -29,7 +29,7 @@ export default function MobileMenuSidebar() {
         root.classList.add("light");
         root.classList.remove("dark");
         root.classList.remove("device");
-        e.currentTarget.classList.add("hideThemeModal");
+        e.currentTarget.classList.add("hide-theme-modal");
         setNavThemeIcon(<MdLightMode />);
       }
 
@@ -37,7 +37,7 @@ export default function MobileMenuSidebar() {
         root.classList.remove("light");
         root.classList.add("dark");
         root.classList.remove("device");
-        e.currentTarget.classList.add("hideThemeModal");
+        e.currentTarget.classList.add("hide-theme-modal");
         setNavThemeIcon(<MdDarkMode />);
       }
 
@@ -45,14 +45,16 @@ export default function MobileMenuSidebar() {
         root.classList.remove("light");
         root.classList.remove("dark");
         root.classList.add("device");
-        e.currentTarget.classList.add("hideThemeModal");
+        e.currentTarget.classList.add("hide-theme-modal");
         setNavThemeIcon(<MdContrast />);
       }
     }
   }
 
   return (
-    <aside className={`${nunito.className} ${styles.aside} mobile-sidebar`}>
+    <aside
+      className={`${nunito.className} ${styles.aside} hide-mobile-sidebar`}
+    >
       <div className={`${styles.routes} ${inter.className}`}>
         <Link href="/projects">Projects</Link>
         <Link href="/guest-posts">Guest Posts</Link>
@@ -60,7 +62,7 @@ export default function MobileMenuSidebar() {
       </div>
       <div className={styles.theme}>
         <div
-          className={`${styles.themeModal} theme-modal`}
+          className={`${styles.themeModal} theme-modal hide-theme-modal`}
           onClick={handleThemeModalClick}
         >
           <button
