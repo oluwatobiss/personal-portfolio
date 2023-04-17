@@ -43,7 +43,7 @@
 }
 
 .introSection div {
-  margin-left: 4rem;
+  padding-left: 4rem;
 }
 
 .introSection h1 {
@@ -149,6 +149,32 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .introSection {
+    background-size: cover;
+    background-position: center;
+    height: 83vh;
+  }
+
+  .introSection div {
+    margin-left: 0;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.63);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .introSection h1 {
+    font-size: 3.17rem;
+  }
+
+  .introSection p {
+    margin-top: 7px;
+    font-size: 1.15rem;
+  }
 }
 
 /* Tablet and Smaller Desktop */
