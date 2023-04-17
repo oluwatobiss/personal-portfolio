@@ -119,8 +119,7 @@
 
 .contactSection div {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   color: var(--secondary-color);
 }
 
