@@ -30,6 +30,9 @@ export default function MobileMenuSidebar() {
         root.classList.remove("dark");
         root.classList.remove("device");
         e.currentTarget.classList.add("hide-theme-modal");
+        e.currentTarget.parentElement.parentElement.classList.add(
+          "hide-mobile-sidebar"
+        );
         setNavThemeIcon(<MdLightMode />);
       }
 
@@ -38,6 +41,9 @@ export default function MobileMenuSidebar() {
         root.classList.add("dark");
         root.classList.remove("device");
         e.currentTarget.classList.add("hide-theme-modal");
+        e.currentTarget.parentElement.parentElement.classList.add(
+          "hide-mobile-sidebar"
+        );
         setNavThemeIcon(<MdDarkMode />);
       }
 
@@ -46,6 +52,9 @@ export default function MobileMenuSidebar() {
         root.classList.remove("dark");
         root.classList.add("device");
         e.currentTarget.classList.add("hide-theme-modal");
+        e.currentTarget.parentElement.parentElement.classList.add(
+          "hide-mobile-sidebar"
+        );
         setNavThemeIcon(<MdContrast />);
       }
     }

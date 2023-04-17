@@ -149,6 +149,18 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  @media (prefers-color-scheme: light) {
+    .imageContainer {
+      border-top: 1px solid var(--primary-color);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .imageContainer {
+      border-top: 1px solid var(--secondary-color);
+    }
+  }
+
   .introSection {
     background-size: cover;
     background-position: center;
@@ -174,6 +186,30 @@
   .introSection p {
     margin-top: 7px;
     font-size: 1.15rem;
+  }
+
+  .nonIntroSection {
+    padding-inline: 2rem;
+  }
+
+  .projectSection div {
+    display: block;
+    border-radius: 10px;
+  }
+
+  .infoSpan {
+    display: inline-block;
+    padding: 27px 22px 15px;
+    line-height: 1.7rem;
+  }
+
+  .imageContainer {
+    border-left: none;
+    display: flex;
+  }
+
+  .imageContainer img {
+    border-radius: 0 0 10px 10px;
   }
 }
 
