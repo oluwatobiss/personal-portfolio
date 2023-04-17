@@ -1,9 +1,46 @@
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  .mobileNavTopbar {
+    background-color: rgba(255, 255, 255, 0.91);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .navLogo {
+    color: var(--primary-color);
+  }
+
+  .menuIcon {
+    color: var(--primary-color);
+  }
+}
+
+/**************************************************/
+/* Color scheme when device's theme is dark mode */
+/**************************************************/
+
+@media (prefers-color-scheme: dark) {
+  .mobileNavTopbar {
+    background-color: rgba(17, 17, 17, 0.91);
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.37);
+  }
+
+  .navLogo {
+    color: var(--secondary-color);
+  }
+
+  .menuIcon {
+    color: var(--secondary-color);
+  }
+}
+
 .mobileNavTopbar {
   padding: 0.7rem 1.5rem;
   height: 11vh;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.14);
 }
 
 .menuIcon {

@@ -13,11 +13,14 @@ export default function MobileMenuTopbar() {
   }
 
   return (
-    <div className={`${styles.mobileNavTopbar}`}>
+    <div className={`${styles.mobileNavTopbar} mobile-nav-topbar`}>
       <Link href="/" className={`${styles.navLogo} ${cairoPlay.className}`}>
         Oluwatobi
       </Link>
-      <span className={styles.menuIcon} onClick={handleMenuIconClick}>
+      <span
+        className={`${styles.menuIcon} mobile-menu-icon`}
+        onClick={handleMenuIconClick}
+      >
         <AiOutlineMenu />
       </span>
     </div>

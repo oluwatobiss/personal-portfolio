@@ -11,7 +11,7 @@ export default function MobileMenuSidebar() {
   const [navThemeIcon, setNavThemeIcon] = useState(<MdDarkMode />);
   function handleThemeNavBtnClick(e) {
     const themeModal =
-      e.currentTarget.parentElement.querySelector(".theme-modal");
+      e.currentTarget.parentElement.parentElement.querySelector(".theme-modal");
     themeModal.classList.toggle("hide-theme-modal");
   }
 
@@ -87,14 +87,18 @@ export default function MobileMenuSidebar() {
             <span>System</span>
           </button>
         </div>
-        <button
-          type="button"
-          className={`${styles.themeNavBtn} theme-nav-btn`}
-          onClick={handleThemeNavBtnClick}
+        <div
+          className={`${styles.themeNavBtnContainer} theme-nav-btn-container`}
         >
-          <span className={styles.themeNavBtnIcon}>{navThemeIcon}</span>
-          <span>Theme</span>
-        </button>
+          <button
+            type="button"
+            className={`${styles.themeNavBtn} theme-nav-btn`}
+            onClick={handleThemeNavBtnClick}
+          >
+            <span className={styles.themeNavBtnIcon}>{navThemeIcon}</span>
+            <span>Theme</span>
+          </button>
+        </div>
       </div>
     </aside>
   );

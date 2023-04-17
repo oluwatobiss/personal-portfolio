@@ -33,6 +33,27 @@
   color: var(--primary-color);
 }
 
+:root.light .mobile-nav-topbar {
+  background-color: rgba(255, 255, 255, 0.91);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+:root.light .mobile-menu-icon {
+  color: var(--primary-color);
+}
+
+:root.light aside {
+  background-color: rgba(255, 255, 255, 0.91);
+}
+
+:root.light aside a {
+  color: var(--primary-color);
+}
+
+:root.light .theme-nav-btn-container {
+  border-top: 1px solid var(--primary-color);
+}
+
 :root.light .theme-nav-btn {
   color: var(--primary-color);
 }
@@ -95,8 +116,25 @@
   color: var(--secondary-color);
 }
 
+:root.dark .mobile-nav-topbar {
+  background-color: rgba(17, 17, 17, 0.91);
+  box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.37);
+}
+
+:root.dark .mobile-menu-icon {
+  color: var(--secondary-color);
+}
+
+:root.dark .theme-nav-btn-container {
+  border-top: 1px solid var(--secondary-color);
+}
+
 :root.dark .theme-nav-btn {
   color: var(--secondary-color);
+}
+
+:root.dark aside {
+  background-color: rgba(17, 17, 17, 0.91);
 }
 
 :root.dark .theme-modal {
