@@ -102,6 +102,10 @@
   border-top: 1px solid var(--primary-color);
 }
 
+:root.light .milestone-card {
+  border-top: 1px solid var(--primary-color);
+}
+
 /**********************************************/
 /* Color scheme when <html> has a dark class */
 /**********************************************/

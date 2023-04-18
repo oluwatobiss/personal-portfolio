@@ -20,18 +20,12 @@
   }
 }
 
-.pageHeading {
-  font-size: 3.3rem;
-  margin: 20px 5rem;
-}
-
 .milestonesContainer {
   padding: 3rem 5rem;
 }
 
 .milestoneCard {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-block: 30px;
   display: grid;
   grid-template-columns: 10% 80%;
   min-height: 70px;
@@ -61,4 +55,33 @@
   font-weight: 500;
   color: inherit;
   margin-top: 5px;
+}
+
+.externalLink {
+  visibility: hidden;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .milestonesContainer {
+    padding: 1rem 30px 2.5rem;
+  }
+
+  .milestoneCard {
+    display: block;
+    padding: 20px 15px;
+  }
+
+  .milestoneIcon {
+    justify-content: flex-start;
+    padding-bottom: 13px;
+  }
+
+  .milestoneInfo a {
+    line-height: 2.03rem;
+  }
+
+  .externalLink {
+    visibility: visible;
+  }
 }
