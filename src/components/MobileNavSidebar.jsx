@@ -1,13 +1,14 @@
-import Link from "next/link";
 import { useState } from "react";
 import { Nunito, Inter } from "next/font/google";
 import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Link from "next/link";
 import styles from "@/src/styles/MobileNavSidebar.module.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
-export default function MobileMenuSidebar() {
+export default function MobileMenuSidebar({ setIcon }) {
   const [navThemeIcon, setNavThemeIcon] = useState(<MdDarkMode />);
   function handleThemeNavBtnClick(e) {
     const themeModal =
@@ -21,9 +22,19 @@ export default function MobileMenuSidebar() {
     const clickedThemeOption = e.target.closest(".theme-option");
 
     if (clickedThemeOption) {
+      const menuSpan = document.querySelector(".mobile-menu-icon");
       const classesOfClickedTheme = [...clickedThemeOption.classList];
+
       themeOptions.forEach((i) => i.classList.remove("active-theme"));
       clickedThemeOption.classList.add("active-theme");
+
+      if ([...menuSpan.classList].includes("show-menu-icon")) {
+        menuSpan.classList.remove("show-menu-icon");
+        setIcon(<AiOutlineClose />);
+      } else {
+        menuSpan.classList.add("show-menu-icon");
+        setIcon(<AiOutlineMenu />);
+      }
 
       if (classesOfClickedTheme.includes("light")) {
         root.classList.add("light");

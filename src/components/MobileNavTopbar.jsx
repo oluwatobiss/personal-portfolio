@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Cairo_Play } from "next/font/google";
 import Link from "next/link";
@@ -6,9 +5,7 @@ import styles from "@/src/styles/MobileNavTopbar.module.css";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });
 
-export default function MobileMenuTopbar() {
-  const [icon, setIcon] = useState(<AiOutlineMenu />);
-
+export default function MobileMenuTopbar({ iconToDisplay, setIcon }) {
   function handleMenuIconClick(e) {
     const mobileSidebar =
       e.currentTarget.parentElement.parentElement.querySelector("aside");
@@ -32,7 +29,7 @@ export default function MobileMenuTopbar() {
         className={`${styles.menuIcon} mobile-menu-icon show-menu-icon`}
         onClick={handleMenuIconClick}
       >
-        {icon}
+        {iconToDisplay}
       </span>
     </div>
   );
