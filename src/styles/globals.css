@@ -85,6 +85,11 @@
   border-left: 1px solid var(--primary-color);
 }
 
+:root.light .project-date {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
 :root.light .guest-post-card {
   border: 1px solid var(--primary-color);
 }
@@ -164,6 +169,11 @@
   border-left: 1px solid var(--secondary-color);
 }
 
+:root.dark .project-date {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 :root.dark .guest-post-card {
   border: 1px solid var(--secondary-color);
 }
@@ -218,7 +228,7 @@ body {
 }
 
 h1 {
-  margin: 20px 5rem;
+  padding: 20px 5rem;
   font-size: 3.3rem;
   color: var(--secondary-color);
 }
@@ -259,5 +269,10 @@ aside.hide-mobile-sidebar {
   :root.dark .card-container .proj-img-container {
     border-left: none;
     border-top: 1px solid var(--secondary-color);
+  }
+
+  h1 {
+    padding: 110px 30px 40px;
+    font-size: 3.17rem;
   }
 }

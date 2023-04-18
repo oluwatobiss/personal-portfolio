@@ -47,7 +47,7 @@
 }
 
 .introSection h1 {
-  margin: 0;
+  padding: 0;
 }
 
 .nonIntroSection {
@@ -176,10 +176,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .introSection h1 {
-    font-size: 3.17rem;
   }
 
   .introSection p {

@@ -16,9 +16,7 @@ export default function Home() {
       <section className={styles.introSection}>
         <div>
           <h1>Oluwatobi Sofela</h1>
-          <p className={nunito.className}>
-            A JavaScript Front End Web Developer
-          </p>
+          <p className={nunito.className}>A JavaScript Developer</p>
         </div>
       </section>
       <section className={`${styles.nonIntroSection} ${styles.projectSection}`}>

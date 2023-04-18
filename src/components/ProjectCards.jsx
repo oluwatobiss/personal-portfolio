@@ -16,9 +16,6 @@ const projectCards = allProjectsInDescOrder.map((i) => {
   const endDateString = i.startDate !== i.endDate ? ` - ${i.endDate}` : "";
   return (
     <section className={styles.projectCard} key={uniqid()}>
-      <div className={styles.projectDate}>
-        <em>{`${i.startDate}${endDateString}`}</em>
-      </div>
       <div className={styles.projectIcon}>{i.icon}</div>
       <div
         className={`${nunito.className} ${styles.projectCategory} ${
@@ -26,6 +23,9 @@ const projectCards = allProjectsInDescOrder.map((i) => {
         }`}
       >
         {i.category}
+      </div>
+      <div className={`${styles.projectDate} project-date`}>
+        <em>{`${i.startDate}${endDateString}`}</em>
       </div>
       <div className={`${styles.projectInfo} card-container`}>
         <span className={styles.infoSpan}>
