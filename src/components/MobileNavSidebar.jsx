@@ -10,10 +10,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function MobileMenuSidebar({ setIcon }) {
   const [navThemeIcon, setNavThemeIcon] = useState(<MdDarkMode />);
-  function handleThemeNavBtnClick(e) {
-    const themeModal =
-      e.currentTarget.parentElement.parentElement.querySelector(".theme-modal");
-    themeModal.classList.toggle("hide-theme-modal");
+
+  function handleRoutesClick(e) {
+    const menuSpan = document.querySelector(".mobile-menu-icon");
+
+    if ([...menuSpan.classList].includes("show-menu-icon")) {
+      menuSpan.classList.remove("show-menu-icon");
+      setIcon(<AiOutlineClose />);
+    } else {
+      menuSpan.classList.add("show-menu-icon");
+      setIcon(<AiOutlineMenu />);
+    }
+
+    e.currentTarget.parentElement.classList.add("hide-mobile-sidebar");
   }
 
   function handleThemeModalClick(e) {
@@ -71,11 +80,20 @@ export default function MobileMenuSidebar({ setIcon }) {
     }
   }
 
+  function handleThemeNavBtnClick(e) {
+    const themeModal =
+      e.currentTarget.parentElement.parentElement.querySelector(".theme-modal");
+    themeModal.classList.toggle("hide-theme-modal");
+  }
+
   return (
     <aside
       className={`${nunito.className} ${styles.aside} hide-mobile-sidebar`}
     >
-      <div className={`${styles.routes} ${inter.className}`}>
+      <div
+        className={`${styles.routes} ${inter.className}`}
+        onClick={handleRoutesClick}
+      >
         <Link href="/projects">Projects</Link>
         <Link href="/guest-posts">Guest Posts</Link>
         <Link href="/milestones">Milestones</Link>
