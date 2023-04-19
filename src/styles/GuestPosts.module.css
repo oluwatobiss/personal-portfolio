@@ -72,7 +72,7 @@
   width: fit-content;
   border-radius: 5px;
   padding: 3px 10px;
-  font-size: 0.87rem;
+  font-size: var(--small-text);
   letter-spacing: 0.77px;
   color: var(--secondary-color);
 }
@@ -100,7 +100,6 @@
 }
 
 .textSection p {
-  font-size: 0.95rem;
   letter-spacing: 0.5px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -110,7 +109,7 @@
 }
 
 .publishedDate {
-  font-size: 0.9rem;
+  font-size: var(--small-text);
   margin-top: auto;
   padding-top: 7px;
 }

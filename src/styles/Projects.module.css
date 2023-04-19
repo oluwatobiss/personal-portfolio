@@ -85,7 +85,7 @@
   line-height: calc((54px / 2) + (3px / 2)); /* Same as height */
   position: relative;
   left: calc(27vw - 5vw); /* Same as .projectInfo left */
-  font-size: 0.9em;
+  font-size: var(--small-text);
 }
 
 .EducationProjectCategory {
@@ -103,7 +103,6 @@
   left: 0;
   height: 54px; /* Use same as .projectIcon to center align appropriately */
   line-height: 54px;
-  font-size: 0.9em;
   text-align: right;
 }
 
@@ -145,7 +144,7 @@
 }
 
 .techStack {
-  font-size: 0.8em;
+  font-size: var(--small-text);
   display: inline-block;
   margin-top: 10px;
 }

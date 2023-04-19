@@ -11,7 +11,8 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
-  --tablet-h3-size: 1.5rem;
+  --small-text: 0.88rem;
+  --large-text: 1.13rem;
   --line-height: 1.67rem;
 }
 
@@ -234,7 +235,7 @@ body {
 }
 
 h1 {
-  padding: 4.3rem 5rem;
+  padding: 4.3rem 5rem 3.5rem;
   font-size: 3.2rem;
   color: var(--secondary-color);
 }

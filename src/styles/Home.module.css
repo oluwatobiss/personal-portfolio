@@ -80,7 +80,7 @@
 }
 
 .techStack {
-  font-size: 0.8em;
+  font-size: var(--small-text);
   display: inline-block;
   margin-top: 10px;
 }
@@ -152,10 +152,6 @@
     padding-left: 1.4rem;
   }
 
-  .bio {
-    font-size: 1.1rem;
-  }
-
   .nonIntroSection {
     padding-inline: 2rem;
   }
@@ -198,6 +194,7 @@
 
   .bio {
     margin-top: 7px;
+    font-size: var(--large-text);
   }
 
   .projectSection div {
@@ -223,10 +220,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .h1AndBioContainer {
     padding-left: 3.5rem;
-  }
-
-  .bio {
-    font-size: 1.35rem;
   }
 
   .nonIntroSection h2 {

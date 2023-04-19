@@ -128,7 +128,7 @@
 
 .themeOption span {
   margin-left: 9px;
-  font-size: 0.9rem;
+  font-size: var(--small-text);
 }
 
 /******************************************/

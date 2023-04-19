@@ -21,13 +21,13 @@
 }
 
 .milestonesContainer {
-  padding: 3rem 5rem;
+  padding: 0 5rem 3rem;
 }
 
 .milestoneCard {
   padding-block: 30px;
   display: grid;
-  grid-template-columns: 10% 80%;
+  grid-template-columns: 10% 90%;
   min-height: 70px;
 }
 
@@ -46,12 +46,12 @@
 }
 
 .milestoneInfo span {
-  font-size: 0.9rem;
+  font-size: var(--small-text);
 }
 
 .milestoneInfo a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: var(--large-text);
   font-weight: 500;
   color: inherit;
   margin-top: 5px;
@@ -80,8 +80,18 @@
   .milestoneInfo a {
     line-height: var(--line-height);
   }
+}
 
+/* Mobile, Tablet, and Smaller Desktop */
+@media (max-width: 1120px) {
   .externalLink {
     visibility: visible;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .milestoneCard {
+    grid-template-columns: 15% 85%;
   }
 }
