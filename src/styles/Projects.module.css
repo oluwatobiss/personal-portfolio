@@ -178,11 +178,6 @@
     ); /* ½ projectIcon's height + ½ projectInfo::before's height */
     line-height: calc((49px / 2) + (3px / 2)); /* Same as height */
   }
-
-  .projectDate {
-    border-inline: 1px solid var(--secondary-color);
-    border-top: 1px solid var(--secondary-color);
-  }
 }
 
 /* Mobile, Tablet, and Smaller Desktop */
@@ -194,6 +189,7 @@
     }
 
     .imageContainer {
+      border-left: none;
       border-top: 1px solid var(--primary-color);
     }
 
@@ -209,6 +205,7 @@
     }
 
     .imageContainer {
+      border-left: none;
       border-top: 1px solid var(--secondary-color);
     }
   }
@@ -230,9 +227,11 @@
     left: calc(27vw - 5vw); /* 27% of vw - preferred right space's width */
     width: calc(73vw - 2vw); /* 73% of vw - .timeline's padding width */
     text-align: left;
-    padding-left: 22px;
-    padding-block: 20px 10px;
+    padding-left: 2.5rem;
+    padding-top: 20px;
     border-top-right-radius: 10px;
+    border-inline: 1px solid var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
   }
 
   .projectDate::before {
@@ -263,7 +262,7 @@
 
   .infoSpan {
     display: inline-block;
-    padding: 0 22px 15px;
+    padding-block: 0 1.2rem;
   }
 
   .imageContainer {
@@ -278,60 +277,16 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  @media (prefers-color-scheme: light) {
-    .imageContainer {
-      border-top: 2px solid var(--primary-color);
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .imageContainer {
-      border-top: 2px solid var(--secondary-color);
-    }
-  }
-
-  .projectIcon {
-    font-size: 3.2rem;
-    width: 80px;
-    height: 80px;
-    left: calc(
-      (22vw / 2) - (80px / 2)
-    ); /* (.projectInfo's left / 2) - (width / 2) */
-  }
-
-  .projectCategory {
-    border: 2px solid var(--secondary-color);
-    border-bottom: none;
-    height: calc(
-      (80px / 2) + (3px / 2)
-    ); /* ½ projectIcon's height + ½ projectInfo::before's height */
-    line-height: calc((80px / 2) + (3px / 2)); /* Same as height */
-    font-size: var(--tablet-small-text-size);
-  }
-
-  .projectDate {
-    border-inline: 2px solid var(--secondary-color);
-    border-top: 2px solid var(--secondary-color);
-    font-size: var(--tablet-small-text-size);
-  }
-
-  .projectInfo {
-    border: 2px solid var(--secondary-color);
-    border-top: none;
-  }
-
   .infoSpan h3 {
     font-size: var(--tablet-h3-size);
     padding-block: 20px 7px;
   }
 
   .infoSpan p {
-    font-size: var(--tablet-p-size);
     line-height: var(--tablet-line-height);
   }
 
   .techStack {
-    font-size: var(--tablet-small-text-size);
     line-height: var(--tablet-line-height);
   }
 }

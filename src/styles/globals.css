@@ -11,10 +11,9 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
-  --tablet-h3-size: 2.27rem;
-  --tablet-p-size: 1.705rem;
-  --tablet-small-text-size: 1.6rem;
-  --tablet-line-height: 2.8rem;
+  --tablet-h2-size: 2rem;
+  --tablet-h3-size: 1.5rem;
+  --tablet-line-height: 1.8rem;
 }
 
 /**********************************************/
@@ -269,6 +268,14 @@ aside.hide-mobile-sidebar {
 
 /* Mobile */
 @media (max-width: 700px) {
+  h1 {
+    padding: 40px 30px 30px;
+    font-size: 3.17rem;
+  }
+}
+
+/* Mobile, Tablet, and Smaller Desktop */
+@media (max-width: 1120px) {
   :root.light .card-container .proj-img-container {
     border-left: none;
     border-top: 1px solid var(--primary-color);
@@ -278,17 +285,12 @@ aside.hide-mobile-sidebar {
     border-left: none;
     border-top: 1px solid var(--secondary-color);
   }
-
-  h1 {
-    padding: 40px 30px 30px;
-    font-size: 3.17rem;
-  }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   h1 {
-    padding-block: 80px 60px;
-    font-size: 5rem;
+    padding-block: 70px 60px;
+    font-size: 3.5rem;
   }
 }
