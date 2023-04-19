@@ -35,7 +35,7 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
           {i.host}
         </span>
         <a href={i.link} target="_blank" rel="noopener">
-          <h2 className={inter.className}>{i.title}</h2>
+          <h3 className={inter.className}>{i.title}</h3>
           <p>{i.about}</p>
         </a>
         <div className={`${styles.publishedDate} published-date`}>

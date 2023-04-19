@@ -46,7 +46,7 @@
   padding-left: 4rem;
 }
 
-.introSection h1 {
+.h1AndBioContainer h1 {
   padding: 0;
 }
 
@@ -153,7 +153,7 @@
   }
 
   .bio {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
   .nonIntroSection {
@@ -162,7 +162,7 @@
 
   .infoSpan {
     padding: 27px 22px 15px;
-    line-height: 1.7rem;
+    line-height: var(--line-height);
   }
 }
 
@@ -226,11 +226,10 @@
   }
 
   .bio {
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
 
   .nonIntroSection h2 {
-    font-size: var(--tablet-h2-size);
     padding-bottom: 17px;
   }
 
@@ -242,16 +241,12 @@
     padding: 47px 43px 30px;
   }
 
-  .infoSpan h3 {
-    font-size: var(--tablet-h3-size);
-  }
-
   .infoSpan p {
-    line-height: var(--tablet-line-height);
+    line-height: var(--line-height);
   }
 
   .techStack {
-    line-height: var(--tablet-line-height);
+    line-height: var(--line-height);
   }
 
   .publicationSection div {
@@ -260,11 +255,9 @@
 
   .publicationSection h3 {
     padding-top: 15px;
-    font-size: var(--tablet-h3-size);
   }
 
   .contactSection h3 {
     padding-top: 15px;
-    font-size: var(--tablet-h3-size);
   }
 }

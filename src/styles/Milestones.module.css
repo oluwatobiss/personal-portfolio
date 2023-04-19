@@ -78,7 +78,7 @@
   }
 
   .milestoneInfo a {
-    line-height: 2.03rem;
+    line-height: var(--line-height);
   }
 
   .externalLink {

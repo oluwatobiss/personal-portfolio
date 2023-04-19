@@ -178,6 +178,14 @@
     ); /* ½ projectIcon's height + ½ projectInfo::before's height */
     line-height: calc((49px / 2) + (3px / 2)); /* Same as height */
   }
+
+  .projectDate {
+    padding-left: 1.65rem;
+  }
+
+  .infoSpan {
+    padding: 0 1.65rem 1.45rem;
+  }
 }
 
 /* Mobile, Tablet, and Smaller Desktop */
@@ -191,10 +199,6 @@
     .imageContainer {
       border-left: none;
       border-top: 1px solid var(--primary-color);
-    }
-
-    .infoSpan {
-      line-height: 1.7rem;
     }
   }
 
@@ -227,8 +231,7 @@
     left: calc(27vw - 5vw); /* 27% of vw - preferred right space's width */
     width: calc(73vw - 2vw); /* 73% of vw - .timeline's padding width */
     text-align: left;
-    padding-left: 2.5rem;
-    padding-top: 20px;
+    padding-block: 1.5rem 1rem;
     border-top-right-radius: 10px;
     border-inline: 1px solid var(--secondary-color);
     border-top: 1px solid var(--secondary-color);
@@ -262,7 +265,14 @@
 
   .infoSpan {
     display: inline-block;
-    padding-block: 0 1.2rem;
+  }
+
+  .infoSpan p {
+    line-height: var(--line-height);
+  }
+
+  .techStack {
+    line-height: var(--line-height);
   }
 
   .imageContainer {
@@ -277,16 +287,11 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .infoSpan h3 {
-    font-size: var(--tablet-h3-size);
-    padding-block: 20px 7px;
+  .projectDate {
+    padding-left: 2.5rem;
   }
 
-  .infoSpan p {
-    line-height: var(--tablet-line-height);
-  }
-
-  .techStack {
-    line-height: var(--tablet-line-height);
+  .infoSpan {
+    padding-block: 0 1.2rem;
   }
 }
