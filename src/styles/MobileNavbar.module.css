@@ -10,8 +10,8 @@
   height: 100vh;
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) {
+/* Desktop */
+@media (min-width: 1120px) {
   .nav {
     display: none;
   }

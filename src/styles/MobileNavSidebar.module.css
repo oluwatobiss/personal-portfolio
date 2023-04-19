@@ -55,7 +55,7 @@
 }
 
 .aside {
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -106,4 +106,27 @@
 
 .themeOption span {
   margin-left: 9px;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .aside {
+    padding: 2.5rem 3rem;
+  }
+  .routes a {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  .themeNavBtn {
+    padding-top: 30px;
+    font-size: 1.9rem;
+  }
+  .themeOption {
+    padding: 30px;
+    border-radius: 3px;
+    font-size: 2rem;
+  }
+  .themeOption span {
+    margin-left: 30px;
+  }
 }
