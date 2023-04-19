@@ -5,3 +5,11 @@
   font-size: 0.8em;
   color: var(--secondary-color);
 }
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .footer {
+    padding: 70px 40px;
+    font-size: 1.705rem;
+  }
+}
