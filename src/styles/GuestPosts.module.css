@@ -37,9 +37,9 @@
 
 .guestPosts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px 20px;
-  padding: 3rem 5rem;
+  padding: 0 5rem 3rem;
 }
 
 .guestPostCard {
@@ -95,7 +95,6 @@
 }
 
 .textSection h3 {
-  line-height: var(--line-height);
   margin-top: 10px;
   margin-bottom: 10px;
 }
