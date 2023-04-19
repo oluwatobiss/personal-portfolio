@@ -10,6 +10,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .footer {
     padding: 70px 40px;
-    font-size: 1.705rem;
+    font-size: var(--tablet-p-size);
   }
 }

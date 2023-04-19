@@ -11,6 +11,10 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
+  --tablet-h3-size: 2.27rem;
+  --tablet-p-size: 1.705rem;
+  --tablet-small-text-size: 1.6rem;
+  --tablet-line-height: 2.8rem;
 }
 
 /**********************************************/
@@ -276,7 +280,15 @@ aside.hide-mobile-sidebar {
   }
 
   h1 {
-    padding: 110px 30px 40px;
+    padding: 40px 30px 30px;
     font-size: 3.17rem;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  h1 {
+    padding-block: 80px 60px;
+    font-size: 5rem;
   }
 }

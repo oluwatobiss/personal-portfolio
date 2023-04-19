@@ -163,6 +163,30 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .projectIcon {
+    font-size: 2rem;
+    width: 49px;
+    height: 49px;
+    left: calc(
+      (22vw / 2) - (49px / 2)
+    ); /* (.projectInfo's left / 2) - (width / 2) */
+  }
+
+  .projectCategory {
+    height: calc(
+      (49px / 2) + (3px / 2)
+    ); /* ½ projectIcon's height + ½ projectInfo::before's height */
+    line-height: calc((49px / 2) + (3px / 2)); /* Same as height */
+  }
+
+  .projectDate {
+    border-inline: 1px solid var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+  }
+}
+
+/* Mobile, Tablet, and Smaller Desktop */
+@media (max-width: 1120px) {
   @media (prefers-color-scheme: light) {
     .projectDate {
       background-color: var(--secondary-color);
@@ -171,6 +195,10 @@
 
     .imageContainer {
       border-top: 1px solid var(--primary-color);
+    }
+
+    .infoSpan {
+      line-height: 1.7rem;
     }
   }
 
@@ -195,22 +223,6 @@
     ); /* (.projectInfo's left / 2) + .timeline padding-right - ½ width */
   }
 
-  .projectIcon {
-    font-size: 2rem;
-    width: 49px;
-    height: 49px;
-    left: calc(
-      (22vw / 2) - (49px / 2)
-    ); /* (.projectInfo's left / 2) - (width / 2) */
-  }
-
-  .projectCategory {
-    height: calc(
-      (49px / 2) + (3px / 2)
-    ); /* ½ projectIcon's height + ½ projectInfo::before's height */
-    line-height: calc((49px / 2) + (3px / 2)); /* Same as height */
-  }
-
   .projectDate {
     height: fit-content;
     line-height: normal;
@@ -220,8 +232,6 @@
     text-align: left;
     padding-left: 22px;
     padding-block: 20px 10px;
-    border-inline: 1px solid var(--secondary-color);
-    border-top: 1px solid var(--secondary-color);
     border-top-right-radius: 10px;
   }
 
@@ -254,7 +264,6 @@
   .infoSpan {
     display: inline-block;
     padding: 0 22px 15px;
-    line-height: 1.7rem;
   }
 
   .imageContainer {
@@ -264,5 +273,65 @@
 
   .imageContainer img {
     border-radius: 0 0 10px 10px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  @media (prefers-color-scheme: light) {
+    .imageContainer {
+      border-top: 2px solid var(--primary-color);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .imageContainer {
+      border-top: 2px solid var(--secondary-color);
+    }
+  }
+
+  .projectIcon {
+    font-size: 3.2rem;
+    width: 80px;
+    height: 80px;
+    left: calc(
+      (22vw / 2) - (80px / 2)
+    ); /* (.projectInfo's left / 2) - (width / 2) */
+  }
+
+  .projectCategory {
+    border: 2px solid var(--secondary-color);
+    border-bottom: none;
+    height: calc(
+      (80px / 2) + (3px / 2)
+    ); /* ½ projectIcon's height + ½ projectInfo::before's height */
+    line-height: calc((80px / 2) + (3px / 2)); /* Same as height */
+    font-size: var(--tablet-small-text-size);
+  }
+
+  .projectDate {
+    border-inline: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
+    font-size: var(--tablet-small-text-size);
+  }
+
+  .projectInfo {
+    border: 2px solid var(--secondary-color);
+    border-top: none;
+  }
+
+  .infoSpan h3 {
+    font-size: var(--tablet-h3-size);
+    padding-block: 20px 7px;
+  }
+
+  .infoSpan p {
+    font-size: var(--tablet-p-size);
+    line-height: var(--tablet-line-height);
+  }
+
+  .techStack {
+    font-size: var(--tablet-small-text-size);
+    line-height: var(--tablet-line-height);
   }
 }

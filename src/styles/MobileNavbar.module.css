@@ -4,12 +4,6 @@
   z-index: 1;
 }
 
-.topNSidebarContainer {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-}
-
 /* Desktop */
 @media (min-width: 1120px) {
   .nav {

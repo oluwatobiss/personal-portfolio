@@ -42,7 +42,7 @@
   color: var(--secondary-color);
 }
 
-.introSection div {
+.h1AndBioContainer {
   padding-left: 4rem;
 }
 
@@ -148,11 +148,11 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .introSection div {
+  .h1AndBioContainer {
     padding-left: 1.4rem;
   }
 
-  .introSection p {
+  .bio {
     font-size: 1.15rem;
   }
 
@@ -186,7 +186,7 @@
     height: 83vh;
   }
 
-  .introSection div {
+  .h1AndBioContainer {
     margin-left: 0;
     background-color: rgba(0, 0, 0, 0.63);
     width: inherit;
@@ -196,7 +196,7 @@
     justify-content: center;
   }
 
-  .introSection p {
+  .bio {
     margin-top: 7px;
   }
 
@@ -221,15 +221,11 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .introSection div {
+  .h1AndBioContainer {
     padding-left: 3.5rem;
   }
 
-  .introSection h1 {
-    font-size: 5rem;
-  }
-
-  .introSection p {
+  .bio {
     font-size: 2.2rem;
   }
 
@@ -244,19 +240,20 @@
 
   .infoSpan {
     padding: 47px 43px 30px;
-    line-height: 2.8rem;
   }
 
   .infoSpan h3 {
-    font-size: 2.27rem;
+    font-size: var(--tablet-h3-size);
   }
 
   .infoSpan p {
-    font-size: 1.705rem;
+    font-size: var(--tablet-p-size);
+    line-height: var(--tablet-line-height);
   }
 
-  .infoSpan span {
-    font-size: 1.4rem;
+  .techStack {
+    font-size: var(--tablet-small-text-size);
+    line-height: var(--tablet-line-height);
   }
 
   .publicationSection div {
@@ -264,12 +261,12 @@
   }
 
   .publicationSection h3 {
-    padding-top: 10px;
-    font-size: 2.05rem;
+    padding-top: 15px;
+    font-size: var(--tablet-h3-size);
   }
 
   .contactSection h3 {
-    padding-top: 10px;
-    font-size: 2.05rem;
+    padding-top: 15px;
+    font-size: var(--tablet-h3-size);
   }
 }

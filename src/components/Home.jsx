@@ -14,9 +14,11 @@ export default function Home() {
         <title>Oluwatobi Sofela - A JavaScript Front End Web Developer</title>
       </Head>
       <section className={styles.introSection}>
-        <div>
+        <div className={styles.h1AndBioContainer}>
           <h1>Oluwatobi Sofela</h1>
-          <p className={nunito.className}>A JavaScript Developer</p>
+          <div className={`${nunito.className} ${styles.bio}`}>
+            A JavaScript Developer
+          </div>
         </div>
       </section>
       <section className={`${styles.nonIntroSection} ${styles.projectSection}`}>
