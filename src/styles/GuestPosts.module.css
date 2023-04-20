@@ -8,7 +8,7 @@
     background-color: var(--secondary-color);
   }
 
-  .imageSection {
+  .imageContainer {
     border-bottom: 1px solid var(--primary-color);
   }
 
@@ -26,7 +26,7 @@
     border: 1px solid var(--secondary-color);
   }
 
-  .imageSection {
+  .imageContainer {
     border-bottom: 1px solid var(--secondary-color);
   }
 
@@ -48,16 +48,18 @@
   flex-direction: column;
 }
 
-.imageSection {
+.imageContainer {
+  border-radius: 5px 5px 0 0;
   height: 240px;
+  overflow: hidden;
 }
 
-.imageSection img {
+.imageContainer img {
   width: 100%;
   height: 100%;
-  border-radius: 5px 5px 0 0;
   border-bottom: 1px solid var(--secondary-color);
   object-fit: cover;
+  transition: transform 0.3s linear;
 }
 
 .textSection {
@@ -119,5 +121,15 @@
   .guestPosts {
     padding: 1rem 30px;
     row-gap: 25px;
+  }
+}
+
+/******************************************/
+/* Enable hover only on non-touch devices */
+/******************************************/
+
+@media (hover: hover) and (pointer: fine) {
+  .imageContainer img:hover {
+    transform: scale(1.07);
   }
 }

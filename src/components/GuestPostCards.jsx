@@ -21,7 +21,7 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
       className={`${styles.guestPostCard} card-container guest-post-card`}
       key={uniqid()}
     >
-      <section className={`${styles.imageSection} guest-post-img-container`}>
+      <section className={`${styles.imageContainer} guest-post-img-container`}>
         <a href={i.link} target="_blank" rel="noopener">
           <Image src={i.imgSrc} alt={i.imgAlt} placeholder="blur" />
         </a>
