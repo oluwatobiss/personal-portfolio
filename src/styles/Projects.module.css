@@ -34,11 +34,10 @@
   padding: 3rem 7vw;
   position: relative;
   width: 100vw;
-  animation: moveTimeLineDown 1s linear forwards;
-  opacity: 0;
+  animation: moveTimelineDown 1s linear forwards;
 }
 
-@keyframes moveTimeLineDown {
+@keyframes moveTimelineDown {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -318,5 +317,16 @@
 @media (hover: hover) and (pointer: fine) {
   .imageContainer img:hover {
     transform: scale(1.07);
+  }
+}
+
+/* Remove motion for users who request reduced motion effects */
+@media (prefers-reduced-motion) {
+  .timeline {
+    animation: none;
+  }
+
+  .imageContainer img:hover {
+    transform: none;
   }
 }

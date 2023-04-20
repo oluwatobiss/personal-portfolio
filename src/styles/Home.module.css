@@ -141,17 +141,6 @@
   height: auto;
 }
 
-/* Remove motion for users who request reduced motion effects */
-@media (prefers-reduced-motion) {
-  .element-with-animation {
-    animation: none;
-  }
-
-  .element-with-transform {
-    transform: none;
-  }
-}
-
 /* Mobile */
 @media (max-width: 700px) {
   .h1AndBioContainer {
@@ -289,5 +278,12 @@
   .InstagramIcon svg:hover {
     fill: #d6249f;
     fill: url("#instagram-icon-gradient");
+  }
+}
+
+/* Remove motion for users who request reduced motion effects */
+@media (prefers-reduced-motion) {
+  .imageContainer img:hover {
+    transform: none;
   }
 }

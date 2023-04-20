@@ -133,3 +133,10 @@
     transform: scale(1.07);
   }
 }
+
+/* Remove motion for users who request reduced motion effects */
+@media (prefers-reduced-motion) {
+  .imageContainer img:hover {
+    transform: none;
+  }
+}
