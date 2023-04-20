@@ -80,10 +80,6 @@
   color: var(--text-color);
 }
 
-:root.light .card-container a {
-  color: var(--text-color);
-}
-
 :root.light .card-container .proj-img-container {
   border-left: 1px solid var(--primary-color);
 }
@@ -159,10 +155,6 @@
 
 :root.dark .card-container {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-:root.dark .card-container a {
   color: var(--secondary-color);
 }
 
