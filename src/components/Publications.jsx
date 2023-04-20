@@ -3,7 +3,7 @@ import { Nunito } from "next/font/google";
 import publicationsInfoArray from "../publicationsInfoArray";
 
 const nunito = Nunito({ subsets: ["latin"] });
-const publicationSpans = publicationsInfoArray.map((i) => (
+const publicationCards = publicationsInfoArray.map((i) => (
   <a href={i.link} target="_blank" rel="noopener" key={uniqid()}>
     <span>
       {i.icon}
@@ -13,5 +13,5 @@ const publicationSpans = publicationsInfoArray.map((i) => (
 ));
 
 export default function Publications() {
-  return <div className={nunito.className}>{publicationSpans}</div>;
+  return <div className={nunito.className}>{publicationCards}</div>;
 }
