@@ -10,7 +10,7 @@ const contactInfoArray = [
   },
   {
     icon: <CiLinkedin />,
-    name: "Linkedin",
+    name: "LinkedIn",
     link: "https://www.linkedin.com/in/oluwatobiss",
   },
   {

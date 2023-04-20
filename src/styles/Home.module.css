@@ -104,10 +104,6 @@
   border-radius: 10px;
 }
 
-.publicationSection a:hover {
-  background-color: rgba(255, 255, 255, 0.07);
-}
-
 .publicationSection span {
   display: inline-block;
   width: 100%;
@@ -257,5 +253,32 @@
 
   .contactSection h3 {
     padding-top: 15px;
+  }
+}
+
+/******************************************/
+/* Enable hover only on non-touch devices */
+/******************************************/
+
+@media (hover: hover) and (pointer: fine) {
+  .publicationSection a:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  .EmailIcon:hover {
+    color: #ff7f50;
+  }
+
+  .LinkedInIcon:hover {
+    color: #0a66c2;
+  }
+
+  .TwitterIcon:hover {
+    color: #1a8cd8;
+  }
+
+  .InstagramIcon svg:hover {
+    fill: #d6249f;
+    fill: url("#instagram-icon-gradient");
   }
 }

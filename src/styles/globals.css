@@ -11,6 +11,7 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
+  --accent-color: #e53a35;
   --small-text: 0.88rem;
   --large-text: 1.13rem;
   --line-height: 1.67rem;
@@ -23,7 +24,6 @@
 :root.light {
   --primary-color: #002147;
   --secondary-color: #fff;
-  --accent-color: #e53a35;
   --text-color: #000;
 }
 
@@ -112,12 +112,6 @@
 /**********************************************/
 /* Color scheme when <html> has a dark class */
 /**********************************************/
-
-:root.dark {
-  --primary-color: #000;
-  --secondary-color: #fff;
-  --accent-color: #e53a35;
-}
 
 :root.dark nav {
   background-color: rgba(17, 17, 17, 0.91);
@@ -252,28 +246,6 @@ aside.hide-mobile-sidebar {
   display: none;
 }
 
-/******************************************/
-/* Enable hover only on non-touch devices */
-/******************************************/
-
-@media (hover: hover) and (pointer: fine) {
-  :root.light .routes a:hover {
-    color: var(--accent-color);
-  }
-
-  :root.light .theme-nav-btn:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  :root.dark .routes a:hover {
-    color: var(--accent-color);
-  }
-
-  :root.dark .theme-nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-}
-
 /* Mobile */
 @media (max-width: 700px) {
   h1 {
@@ -298,5 +270,27 @@ aside.hide-mobile-sidebar {
 @media (min-width: 701px) and (max-width: 1120px) {
   h1 {
     padding-block: 70px 60px;
+  }
+}
+
+/******************************************/
+/* Enable hover only on non-touch devices */
+/******************************************/
+
+@media (hover: hover) and (pointer: fine) {
+  :root.light .routes a:hover {
+    color: var(--accent-color);
+  }
+
+  :root.light .theme-nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  :root.dark .routes a:hover {
+    color: var(--accent-color);
+  }
+
+  :root.dark .theme-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
