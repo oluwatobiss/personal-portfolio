@@ -1,9 +1,10 @@
+import { Typewriter } from "react-simple-typewriter";
+import { Nunito } from "next/font/google";
 import Head from "next/head";
 import SelectedProjects from "./SelectedProjects";
 import Publications from "./Publications";
 import Contact from "./Contact";
 import styles from "@/src/styles/Home.module.css";
-import { Nunito } from "next/font/google";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -32,7 +33,18 @@ export default function Home() {
         <div className={styles.h1AndBioContainer}>
           <h1>Oluwatobi Sofela</h1>
           <div className={`${nunito.className} ${styles.bio}`}>
-            A JavaScript Developer
+            I'm
+            <Typewriter
+              words={[
+                " a JavaScript developer",
+                " the author of 4 technical books",
+                " the founder of CodeSweetly.com",
+              ]}
+              loop={0}
+              cursor
+              typeSpeed={130}
+              deleteSpeed={100}
+            />
           </div>
         </div>
       </section>
