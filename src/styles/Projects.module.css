@@ -34,6 +34,20 @@
   padding: 3rem 7vw;
   position: relative;
   width: 100vw;
+  animation: moveTimeLineDown 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes moveTimeLineDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .timeline::after {
