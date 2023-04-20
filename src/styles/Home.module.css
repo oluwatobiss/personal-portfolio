@@ -85,11 +85,16 @@
   margin-top: 10px;
 }
 
+.imageContainer {
+  overflow: hidden;
+  border-radius: 0 25px 25px 0;
+}
+
 .imageContainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0 25px 25px 0;
+  transition: transform 0.3s linear;
 }
 
 .publicationSection div {
@@ -261,6 +266,10 @@
 /******************************************/
 
 @media (hover: hover) and (pointer: fine) {
+  .imageContainer img:hover {
+    transform: scale(1.03);
+  }
+
   .publicationSection a:hover {
     background-color: rgba(255, 255, 255, 0.07);
   }
