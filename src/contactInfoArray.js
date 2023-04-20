@@ -6,7 +6,7 @@ const contactInfoArray = [
   {
     icon: <AiOutlineMail />,
     name: "Email",
-    link: "contact@codesweetly.com",
+    link: "mailto:oluwatobiss@codesweetly.com",
   },
   {
     icon: <CiLinkedin />,
