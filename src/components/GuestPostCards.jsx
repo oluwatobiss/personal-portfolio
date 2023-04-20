@@ -1,10 +1,11 @@
+import { Inter, Nunito } from "next/font/google";
 import uniqid from "uniqid";
 import Image from "next/image";
-import { Inter, Nunito } from "next/font/google";
-import styles from "@/src/styles/GuestPosts.module.css";
+import FormatDate from "./Date";
 import educativeAnswersPostsInfoArray from "../educativeAnswersPostsInfoArray";
 import freeCodeCampPostsInfoArray from "../freeCodeCampPostsInfoArray";
 import hackernoonPostsInfoArray from "../hackernoonPostsInfoArray";
+import styles from "@/src/styles/GuestPosts.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -39,7 +40,7 @@ const guestPostCards = allGuestPostsInDescOrder.map((i) => {
           <p>{i.about}</p>
         </a>
         <div className={`${styles.publishedDate} published-date`}>
-          {i.publishedDate}
+          <FormatDate dateString={i.publishedDate} />
         </div>
       </section>
     </div>

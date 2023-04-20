@@ -1,7 +1,8 @@
 import uniqid from "uniqid";
-import styles from "@/src/styles/Milestones.module.css";
+import FormatDate from "./Date";
 import awardsInfoArray from "../awardsInfoArray";
 import personalMilestonesInfoArray from "../personalMilestonesInfoArray";
+import styles from "@/src/styles/Milestones.module.css";
 
 const allMilestonesInDescOrder = [
   ...awardsInfoArray,
@@ -16,7 +17,9 @@ const milestonesCards = allMilestonesInDescOrder.map((i) => {
     >
       <div className={styles.milestoneIcon}>{i.icon}</div>
       <div className={styles.milestoneInfo}>
-        <span>{i.date}</span>
+        <span>
+          <FormatDate dateString={i.date} />
+        </span>
         <a href={i.link} target="_blank" rel="noopener">
           {i.title}{" "}
           <svg
