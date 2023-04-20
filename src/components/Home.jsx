@@ -33,18 +33,23 @@ export default function Home() {
         <div className={styles.h1AndBioContainer}>
           <h1>Oluwatobi Sofela</h1>
           <div className={`${nunito.className} ${styles.bio}`}>
-            I'm
-            <Typewriter
-              words={[
-                " a JavaScript developer",
-                " the author of 4 technical books",
-                " the founder of CodeSweetly.com",
-              ]}
-              loop={0}
-              cursor
-              typeSpeed={130}
-              deleteSpeed={100}
-            />
+            I'm{" "}
+            <span className={styles.nonAnimatedBio}>
+              a JavaScript developer
+            </span>
+            <span className={styles.animatedBio}>
+              <Typewriter
+                words={[
+                  "a JavaScript developer",
+                  "the author of 4 technical books",
+                  "the founder of CodeSweetly.com",
+                ]}
+                loop={0}
+                cursor
+                typeSpeed={130}
+                deleteSpeed={100}
+              />
+            </span>
           </div>
         </div>
       </section>

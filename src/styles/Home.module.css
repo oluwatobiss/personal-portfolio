@@ -50,6 +50,10 @@
   padding: 0;
 }
 
+.nonAnimatedBio {
+  display: none;
+}
+
 .nonIntroSection {
   padding: 3rem 5rem;
 }
@@ -283,6 +287,14 @@
 
 /* Remove motion for users who request reduced motion effects */
 @media (prefers-reduced-motion) {
+  .nonAnimatedBio {
+    display: inline-block;
+  }
+
+  .animatedBio {
+    display: none;
+  }
+
   .imageContainer img:hover {
     transform: none;
   }
