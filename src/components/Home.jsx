@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Oluwatobi Sofela - A JavaScript Front End Web Developer</title>
+        <title>Oluwatobi Sofela - A JavaScript Developer</title>
       </Head>
       <svg
         style={{ width: 0, height: 0, position: "absolute" }}
