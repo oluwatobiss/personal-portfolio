@@ -16,7 +16,7 @@ export default function NameAndBio() {
             words={[
               "a JavaScript developer",
               "the author of 4 technical books",
-              "the founder of CodeSweetly.com",
+              "the founder of CodeSweetly",
             ]}
             loop={0}
             cursor

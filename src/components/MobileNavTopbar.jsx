@@ -36,7 +36,7 @@ export default function MobileMenuTopbar({ iconToDisplay, setIcon }) {
 
   return (
     <div className={`${styles.mobileNavTopbar} mobile-nav-topbar`}>
-      <span onClick={handleLogoClick}>
+      <span className={styles.logoContainer} onClick={handleLogoClick}>
         <Link href="/" className={`${styles.navLogo} ${cairoPlay.className}`}>
           Oluwatobi
         </Link>
