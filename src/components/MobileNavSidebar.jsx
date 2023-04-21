@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Nunito, Inter } from "next/font/google";
-import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
+import { Nunito, Inter } from "next/font/google";
 import Link from "next/link";
 import styles from "@/src/styles/MobileNavSidebar.module.css";
 

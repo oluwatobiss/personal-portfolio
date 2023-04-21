@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "@/src/styles/GuestPosts.module.css";
 import GuestPostCards from "./GuestPostCards";
+import styles from "@/src/styles/GuestPosts.module.css";
 
 export default function GuestPosts() {
   return (

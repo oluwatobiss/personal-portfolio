@@ -1,5 +1,5 @@
-import uniqid from "uniqid";
 import { Nunito } from "next/font/google";
+import uniqid from "uniqid";
 import contactInfoArray from "../contactInfoArray";
 import styles from "@/src/styles/Home.module.css";
 

@@ -1,3 +1,7 @@
+/****************/
+/* Global rules */
+/****************/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -32,7 +36,10 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-:root.light nav a {
+:root.light nav a,
+:root.light .mobile-menu-icon,
+:root.light aside a,
+:root.light .theme-nav-btn {
   color: var(--primary-color);
 }
 
@@ -41,24 +48,14 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-:root.light .mobile-menu-icon {
-  color: var(--primary-color);
-}
-
 :root.light aside {
   background-color: rgba(255, 255, 255, 0.91);
 }
 
-:root.light aside a {
-  color: var(--primary-color);
-}
-
-:root.light .theme-nav-btn-container {
+:root.light .theme-nav-btn-container,
+:root.light .published-date,
+:root.light .milestone-card {
   border-top: 1px solid var(--primary-color);
-}
-
-:root.light .theme-nav-btn {
-  color: var(--primary-color);
 }
 
 :root.light .theme-modal {
@@ -97,14 +94,6 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
-:root.light .published-date {
-  border-top: 1px solid var(--primary-color);
-}
-
-:root.light .milestone-card {
-  border-top: 1px solid var(--primary-color);
-}
-
 /**********************************************/
 /* Color scheme when <html> has a dark class */
 /**********************************************/
@@ -114,7 +103,10 @@
   box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.14);
 }
 
-:root.dark nav a {
+:root.dark nav a,
+:root.dark .mobile-menu-icon,
+:root.dark .theme-nav-btn,
+:root.dark .theme-option {
   color: var(--secondary-color);
 }
 
@@ -123,16 +115,10 @@
   box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.37);
 }
 
-:root.dark .mobile-menu-icon {
-  color: var(--secondary-color);
-}
-
-:root.dark .theme-nav-btn-container {
+:root.dark .theme-nav-btn-container,
+:root.dark .published-date,
+:root.dark .milestone-card {
   border-top: 1px solid var(--secondary-color);
-}
-
-:root.dark .theme-nav-btn {
-  color: var(--secondary-color);
 }
 
 :root.dark aside {
@@ -143,10 +129,6 @@
   background-color: var(--primary-color);
   box-shadow: rgba(241, 225, 218, 0.12) 0px 2px 4px 0px,
     rgba(241, 225, 218, 0.32) 0px 2px 16px 0px;
-}
-
-:root.dark .theme-option {
-  color: var(--secondary-color);
 }
 
 :root.dark .theme-modal .active-theme {
@@ -169,14 +151,6 @@
 
 :root.dark .guest-post-card {
   border: 1px solid var(--secondary-color);
-}
-
-:root.dark .published-date {
-  border-top: 1px solid var(--secondary-color);
-}
-
-:root.dark .milestone-card {
-  border-top: 1px solid var(--secondary-color);
 }
 
 /**************************************************/
@@ -204,6 +178,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
+
+/*****************/
+/* Default rules */
+/*****************/
 
 html,
 body {
@@ -239,14 +217,20 @@ aside.hide-mobile-sidebar {
   display: none;
 }
 
+/**********/
 /* Mobile */
+/**********/
+
 @media (max-width: 700px) {
   h1 {
     padding: 3.6rem 30px 2.5rem;
   }
 }
 
+/***************************************/
 /* Mobile, Tablet, and Smaller Desktop */
+/***************************************/
+
 @media (max-width: 1120px) {
   :root.light .card-container .proj-img-container {
     border-left: none;
@@ -259,7 +243,10 @@ aside.hide-mobile-sidebar {
   }
 }
 
+/******************************/
 /* Tablet and Smaller Desktop */
+/******************************/
+
 @media (min-width: 701px) and (max-width: 1120px) {
   h1 {
     padding-block: 70px 60px;
@@ -271,16 +258,13 @@ aside.hide-mobile-sidebar {
 /******************************************/
 
 @media (hover: hover) and (pointer: fine) {
-  :root.light .routes a:hover {
+  :root.light .routes a:hover,
+  :root.dark .routes a:hover {
     color: var(--accent-color);
   }
 
   :root.light .theme-nav-btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  :root.dark .routes a:hover {
-    color: var(--accent-color);
   }
 
   :root.dark .theme-nav-btn:hover {

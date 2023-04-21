@@ -20,6 +20,10 @@
   }
 }
 
+/*****************/
+/* Default rules */
+/*****************/
+
 .milestonesContainer {
   padding: 0 5rem 3rem;
 }
@@ -61,7 +65,10 @@
   visibility: hidden;
 }
 
+/**********/
 /* Mobile */
+/**********/
+
 @media (max-width: 700px) {
   .milestonesContainer {
     padding: 1rem 30px 2.5rem;
@@ -82,14 +89,20 @@
   }
 }
 
+/***************************************/
 /* Mobile, Tablet, and Smaller Desktop */
+/***************************************/
+
 @media (max-width: 1120px) {
   .externalLink {
     visibility: visible;
   }
 }
 
+/******************************/
 /* Tablet and Smaller Desktop */
+/******************************/
+
 @media (min-width: 701px) and (max-width: 1120px) {
   .milestoneCard {
     grid-template-columns: 15% 85%;

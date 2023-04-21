@@ -7,7 +7,8 @@
     background-color: rgba(255, 255, 255, 0.91);
   }
 
-  .routes a {
+  .routes a,
+  .themeNavBtn {
     color: var(--primary-color);
   }
 
@@ -19,10 +20,6 @@
 
   .themeNavBtnContainer {
     border-top: 1px solid var(--primary-color);
-  }
-
-  .themeNavBtn {
-    color: var(--primary-color);
   }
 }
 
@@ -53,6 +50,10 @@
     color: var(--secondary-color);
   }
 }
+
+/*****************/
+/* Default rules */
+/*****************/
 
 .aside {
   padding: 1.5rem;
@@ -106,7 +107,10 @@
   margin-left: 9px;
 }
 
+/******************************/
 /* Tablet and Smaller Desktop */
+/******************************/
+
 @media (min-width: 701px) and (max-width: 1120px) {
   .aside {
     padding: 2.5rem 3rem;

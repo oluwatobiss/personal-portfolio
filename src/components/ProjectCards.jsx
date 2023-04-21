@@ -1,9 +1,9 @@
+import { Nunito } from "next/font/google";
 import uniqid from "uniqid";
 import Image from "next/image";
-import styles from "@/src/styles/Projects.module.css";
-import { Nunito } from "next/font/google";
 import educationProjectsInfoArray from "../educationProjectsInfoArray";
 import workProjectsInfoArray from "../workProjectsInfoArray";
+import styles from "@/src/styles/Projects.module.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
 

@@ -1,8 +1,9 @@
-@media (prefers-color-scheme: light) {
-  .pageHeading {
-    color: var(--secondary-color);
-  }
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
 
+@media (prefers-color-scheme: light) {
+  .pageHeading,
   .projectDate {
     color: var(--secondary-color);
   }
@@ -29,6 +30,10 @@
     border-left: 1px solid var(--primary-color);
   }
 }
+
+/*****************/
+/* Default rules */
+/*****************/
 
 .timeline {
   padding: 3rem 7vw;
@@ -175,7 +180,10 @@
   transition: transform 0.3s linear;
 }
 
+/**********/
 /* Mobile */
+/**********/
+
 @media (max-width: 700px) {
   .projectIcon {
     font-size: 2rem;
@@ -202,7 +210,10 @@
   }
 }
 
+/***************************************/
 /* Mobile, Tablet, and Smaller Desktop */
+/***************************************/
+
 @media (max-width: 1120px) {
   @media (prefers-color-scheme: light) {
     .projectDate {
@@ -281,10 +292,7 @@
     display: inline-block;
   }
 
-  .infoSpan p {
-    line-height: var(--line-height);
-  }
-
+  .infoSpan p,
   .techStack {
     line-height: var(--line-height);
   }
@@ -299,7 +307,10 @@
   }
 }
 
+/******************************/
 /* Tablet and Smaller Desktop */
+/******************************/
+
 @media (min-width: 701px) and (max-width: 1120px) {
   .projectDate {
     padding-left: 2.5rem;
@@ -320,7 +331,10 @@
   }
 }
 
+/**************************************************************/
 /* Remove motion for users who request reduced motion effects */
+/**************************************************************/
+
 @media (prefers-reduced-motion) {
   .timeline {
     animation: none;

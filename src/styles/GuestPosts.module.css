@@ -35,6 +35,10 @@
   }
 }
 
+/*****************/
+/* Default rules */
+/*****************/
+
 .guestPosts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -117,7 +121,10 @@
   padding-top: 7px;
 }
 
+/**********/
 /* Mobile */
+/**********/
+
 @media (max-width: 700px) {
   .guestPosts {
     padding: 1rem 30px;
@@ -135,7 +142,10 @@
   }
 }
 
+/**************************************************************/
 /* Remove motion for users who request reduced motion effects */
+/**************************************************************/
+
 @media (prefers-reduced-motion) {
   .imageContainer img:hover {
     transform: none;

@@ -1,10 +1,17 @@
+/*****************/
+/* Default rules */
+/*****************/
+
 .nav {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
+/***********/
 /* Desktop */
+/***********/
+
 @media (min-width: 1120px) {
   .nav {
     display: none;

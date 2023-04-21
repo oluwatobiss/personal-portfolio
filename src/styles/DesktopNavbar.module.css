@@ -8,12 +8,15 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   }
 
-  .nav a {
+  .nav a,
+  .themeNavBtn {
     color: var(--primary-color);
   }
 
-  .themeNavBtn {
-    color: var(--primary-color);
+  .themeModal {
+    background-color: var(--secondary-color);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
   /* Enable hover only on non-touch devices */
@@ -22,17 +25,11 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
-
-  .themeModal {
-    background-color: var(--secondary-color);
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  }
 }
 
-/**************************************************/
+/*************************************************/
 /* Color scheme when device's theme is dark mode */
-/**************************************************/
+/*************************************************/
 
 @media (prefers-color-scheme: dark) {
   .nav {
@@ -40,12 +37,15 @@
     box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.14);
   }
 
-  .nav a {
+  .nav a,
+  .themeNavBtn {
     color: var(--secondary-color);
   }
 
-  .themeNavBtn {
-    color: var(--secondary-color);
+  .themeModal {
+    background-color: var(--primary-color);
+    box-shadow: rgba(241, 225, 218, 0.12) 0px 2px 4px 0px,
+      rgba(241, 225, 218, 0.32) 0px 2px 16px 0px;
   }
 
   /* Enable hover only on non-touch devices */
@@ -54,13 +54,11 @@
       background-color: rgba(255, 255, 255, 0.1);
     }
   }
-
-  .themeModal {
-    background-color: var(--primary-color);
-    box-shadow: rgba(241, 225, 218, 0.12) 0px 2px 4px 0px,
-      rgba(241, 225, 218, 0.32) 0px 2px 16px 0px;
-  }
 }
+
+/*****************/
+/* Default rules */
+/*****************/
 
 .nav {
   width: 100vw;
@@ -137,7 +135,7 @@
 
 @media (hover: hover) and (pointer: fine) {
   .routes a:hover {
-    color: #e53a35;
+    color: var(--accent-color);
   }
 
   .themeNavBtn:hover {
@@ -150,7 +148,10 @@
   }
 }
 
-/* Mobile */
+/***************************************/
+/* Mobile, Tablet, and Smaller Desktop */
+/***************************************/
+
 @media (max-width: 1120px) {
   .nav {
     display: none;

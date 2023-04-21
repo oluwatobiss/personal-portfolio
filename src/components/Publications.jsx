@@ -1,5 +1,5 @@
-import uniqid from "uniqid";
 import { Nunito } from "next/font/google";
+import uniqid from "uniqid";
 import publicationsInfoArray from "../publicationsInfoArray";
 
 const nunito = Nunito({ subsets: ["latin"] });

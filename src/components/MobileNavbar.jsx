@@ -6,7 +6,6 @@ import styles from "@/src/styles/MobileNavbar.module.css";
 
 export default function MobileNavbar() {
   const [closeOrMenuIcon, setCloseOrMenuIcon] = useState(<AiOutlineMenu />);
-
   return (
     <nav className={`${styles.nav}`}>
       <div className={styles.topNSidebarContainer}>

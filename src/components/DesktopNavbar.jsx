@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { useState } from "react";
-import { Cairo_Play, Nunito, Inter } from "next/font/google";
 import { MdContrast, MdDarkMode, MdLightMode } from "react-icons/md";
+import { Cairo_Play, Nunito, Inter } from "next/font/google";
+import Link from "next/link";
 import styles from "@/src/styles/DesktopNavbar.module.css";
 
 const cairoPlay = Cairo_Play({ subsets: ["latin"] });

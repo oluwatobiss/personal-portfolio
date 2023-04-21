@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "@/src/styles/Projects.module.css";
 import ProjectCards from "./ProjectCards";
+import styles from "@/src/styles/Projects.module.css";
 
 export default function Projects() {
   return (

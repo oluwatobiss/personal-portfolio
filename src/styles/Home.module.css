@@ -16,9 +16,9 @@
   }
 }
 
-/**************************************************/
+/*************************************************/
 /* Color scheme when device's theme is dark mode */
-/**************************************************/
+/*************************************************/
 
 @media (prefers-color-scheme: dark) {
   .projectSection a {
@@ -29,6 +29,10 @@
     border-left: 1px solid var(--secondary-color);
   }
 }
+
+/*****************/
+/* Intro section */
+/*****************/
 
 .introSection {
   background-image: url(../../public/home-intro-image.png);
@@ -54,6 +58,10 @@
   display: none;
 }
 
+/*********************/
+/* Non-intro section */
+/*********************/
+
 .nonIntroSection {
   padding: 3rem 5rem;
 }
@@ -62,6 +70,10 @@
   margin-bottom: 20px;
   color: var(--secondary-color);
 }
+
+/*******************/
+/* Project section */
+/*******************/
 
 .projectSection div {
   display: grid;
@@ -101,6 +113,10 @@
   transition: transform 0.3s linear;
 }
 
+/***********************/
+/* Publication section */
+/***********************/
+
 .publicationSection div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -127,6 +143,10 @@
   height: auto;
 }
 
+/*******************/
+/* Contact section */
+/*******************/
+
 .contactSection div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -145,7 +165,10 @@
   height: auto;
 }
 
+/**********/
 /* Mobile */
+/**********/
+
 @media (max-width: 700px) {
   .nameAndBioContainer {
     padding-left: 1.4rem;
@@ -161,7 +184,10 @@
   }
 }
 
+/***************************************/
 /* Mobile, Tablet, and Smaller Desktop */
+/***************************************/
+
 @media (max-width: 1120px) {
   @media (prefers-color-scheme: light) {
     .imageContainer {
@@ -215,7 +241,10 @@
   }
 }
 
+/******************************/
 /* Tablet and Smaller Desktop */
+/******************************/
+
 @media (min-width: 701px) and (max-width: 1120px) {
   .nameAndBioContainer {
     padding-left: 3.5rem;
@@ -285,7 +314,10 @@
   }
 }
 
+/**************************************************************/
 /* Remove motion for users who request reduced motion effects */
+/**************************************************************/
+
 @media (prefers-reduced-motion) {
   .nonAnimatedBio {
     display: inline-block;
