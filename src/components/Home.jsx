@@ -21,11 +21,11 @@ export default function Home() {
       >
         <defs>
           <radialGradient id="instagram-icon-gradient" cx="0.3" cy="0.3">
-            <stop offset="0%" stop-color="#fdf497" />
-            <stop offset="5%" stop-color="#fdf497" />
-            <stop offset="45%" stop-color="#fd5949" />
-            <stop offset="60%" stop-color="#d6249f" />
-            <stop offset="90%" stop-color="#285aeb" />
+            <stop offset="0%" stopColor="#fdf497" />
+            <stop offset="5%" stopColor="#fdf497" />
+            <stop offset="45%" stopColor="#fd5949" />
+            <stop offset="60%" stopColor="#d6249f" />
+            <stop offset="90%" stopColor="#285aeb" />
           </radialGradient>
         </defs>
       </svg>
@@ -46,7 +46,7 @@ export default function Home() {
                 ]}
                 loop={0}
                 cursor
-                typeSpeed={130}
+                typeSpeed={230}
                 deleteSpeed={100}
               />
             </span>
