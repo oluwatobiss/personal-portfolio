@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@camwiegert/typical": "^0.1.1",
     "date-fns": "^2.29.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
@@ -18,6 +19,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-simple-typewriter": "^5.0.1",
     "uniqid": "^5.4.0"
   },
   "devDependencies": {

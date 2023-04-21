@@ -46,8 +46,6 @@ export default function Home() {
                 ]}
                 loop={0}
                 cursor
-                typeSpeed={230}
-                deleteSpeed={100}
               />
             </span>
           </div>
