@@ -42,11 +42,11 @@
   color: var(--secondary-color);
 }
 
-.h1AndBioContainer {
+.nameAndBioContainer {
   padding-left: 4rem;
 }
 
-.h1AndBioContainer h1 {
+.nameAndBioContainer h1 {
   padding: 0;
 }
 
@@ -147,7 +147,7 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .h1AndBioContainer {
+  .nameAndBioContainer {
     padding-left: 1.4rem;
   }
 
@@ -181,7 +181,7 @@
     height: 83vh;
   }
 
-  .h1AndBioContainer {
+  .nameAndBioContainer {
     margin-left: 0;
     background-color: rgba(0, 0, 0, 0.63);
     width: inherit;
@@ -217,7 +217,7 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .h1AndBioContainer {
+  .nameAndBioContainer {
     padding-left: 3.5rem;
   }
 
