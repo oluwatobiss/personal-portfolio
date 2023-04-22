@@ -9,7 +9,7 @@ export default function NameAndBio() {
     <div className={styles.nameAndBioContainer}>
       <h1>Oluwatobi Sofela</h1>
       <div className={`${nunito.className} ${styles.bio}`}>
-        I'm{" "}
+        {"I'm "}
         <span className={styles.nonAnimatedBio}>a JavaScript developer</span>
         <span className={styles.animatedBio}>
           <Typewriter
