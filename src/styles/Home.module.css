@@ -232,11 +232,8 @@
   }
 
   .imageContainer {
-    border-left: none;
     display: flex;
-  }
-
-  .imageContainer img {
+    border-left: none;
     border-radius: 0 0 10px 10px;
   }
 }
