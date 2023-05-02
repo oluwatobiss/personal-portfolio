@@ -4,7 +4,7 @@ Here is my personal portfolio!🤩
 
 It is an excellent resource for knowing about me and my work.
 
-Feel free to [use the app here](https://personal-portfolio-5a0ad77h1-oluwatobiss.vercel.app).
+Feel free to [use the app here](https://personal-portfolio-oluwatobiss.vercel.app).
 
 **Note:**
 
