@@ -15,7 +15,7 @@ export default function NameAndBio() {
           <Typewriter
             words={[
               "a JavaScript developer",
-              "the author of 4 technical books",
+              "the author of 5 technical books",
               "the founder of CodeSweetly",
             ]}
             loop={0}
