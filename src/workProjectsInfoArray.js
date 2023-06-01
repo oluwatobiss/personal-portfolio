@@ -1,12 +1,57 @@
 import { MdWorkOutline } from "react-icons/md";
-import cssGridBookProjPic from "@/public/projects/work/css-grid-guidebook-oluwatobi-sofela.webp";
-import youTubePlaylistProjPic from "@/public/projects/work/react-youtube-playlist-oluwatobi-sofela.webp";
-import cssFlexboxBookProjPic from "@/public/projects/work/css-flexbox-oluwatobi-sofela.webp";
-import visualFlexboxBookProjPic from "@/public/projects/work/visual-flexbox-oluwatobi-sofela.webp";
-import reactBookProjPic from "@/public/projects/work/react-explained-clearly-oluwatobi-sofela.webp";
-import codesweetlyWebsitePic from "@/public/projects/work/codesweetly-oluwatobi-sofela.png";
+import codesweetlyWebsitePic from "@/public/projects/work/codesweetly-homepage.png";
+import codesweetlySketchbookPic from "@/public/projects/work/codesweetly-sketchbook.webp";
+import cssFlexboxBookProjPic from "@/public/projects/work/css-flexbox.webp";
+import cssGridBookProjPic from "@/public/projects/work/css-grid-guidebook.webp";
+import imageGridGalleryProjPic from "@/public/projects/work/react-image-grid-gallery.webp";
+import reactBookProjPic from "@/public/projects/work/react-explained-clearly.webp";
+import visualCSSGridBookProjPic from "@/public/projects/work/visual-css-grid.webp";
+import visualFlexboxBookProjPic from "@/public/projects/work/visual-flexbox.webp";
+import youTubePlaylistProjPic from "@/public/projects/work/react-youtube-playlist.webp";
 
 const workProjectsInfoArray = [
+  {
+    endDate: 2023,
+    startDate: 2023,
+    icon: <MdWorkOutline />,
+    category: "Work",
+    name: "React Image Grid Gallery",
+    about:
+      "A simple, easy-to-use, and responsive image gallery component for displaying a grid of images in React apps.",
+    stackType: "Tech",
+    stack: "Babel, ReactJS, TypeScript",
+    imgSrc: imageGridGalleryProjPic,
+    imgAlt: "The React Image Grid Gallery project's screenshot",
+    link: "https://www.npmjs.com/package/react-image-grid-gallery",
+  },
+  {
+    endDate: 2023,
+    startDate: 2023,
+    icon: <MdWorkOutline />,
+    category: "Work",
+    name: "CodeSweetly Sketchbook",
+    about:
+      "Every top-notch design begins with a sketch. The CodeSweetly Sketchbook is an ideal sketch/note-taking pad for app developers and programmers.",
+    stackType: "Press",
+    stack: "Affinity Suite",
+    imgSrc: codesweetlySketchbookPic,
+    imgAlt: "The CodeSweetly sketchbook's image",
+    link: "https://amzn.to/459dQWO",
+  },
+  {
+    endDate: 2023,
+    startDate: 2023,
+    icon: <MdWorkOutline />,
+    category: "Work",
+    name: "Visual CSS Grid",
+    about:
+      "A book filled with beautiful CSS Grid images. Use it as your complete image guide to the CSS Grid layout module.",
+    stackType: "Press",
+    stack: "Microsoft Word, Affinity Suite, Kindle Create",
+    imgSrc: visualCSSGridBookProjPic,
+    imgAlt: "The Visual CSS Grid book's image",
+    link: "https://amzn.to/4216eU6",
+  },
   {
     endDate: 2023,
     startDate: 2023,
