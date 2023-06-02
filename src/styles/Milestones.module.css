@@ -1,25 +1,3 @@
-/**************************************************/
-/* Color scheme when device's theme is light mode */
-/**************************************************/
-
-@media (prefers-color-scheme: light) {
-  .milestoneCard {
-    border-top: 1px solid var(--primary-color);
-    background-color: var(--secondary-color);
-  }
-}
-
-/**************************************************/
-/* Color scheme when device's theme is dark mode */
-/**************************************************/
-
-@media (prefers-color-scheme: dark) {
-  .milestoneCard {
-    border-top: 1px solid var(--secondary-color);
-    background-color: var(--primary-color);
-  }
-}
-
 /*****************/
 /* Default rules */
 /*****************/
@@ -63,6 +41,28 @@
 
 .externalLink {
   visibility: hidden;
+}
+
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  .milestoneCard {
+    border-top: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+/**************************************************/
+/* Color scheme when device's theme is dark mode */
+/**************************************************/
+
+@media (prefers-color-scheme: dark) {
+  .milestoneCard {
+    border-top: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+  }
 }
 
 /**********/

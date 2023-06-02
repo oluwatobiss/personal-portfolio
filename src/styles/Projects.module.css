@@ -1,36 +1,3 @@
-/**************************************************/
-/* Color scheme when device's theme is light mode */
-/**************************************************/
-
-@media (prefers-color-scheme: light) {
-  .pageHeading,
-  .projectDate {
-    color: var(--secondary-color);
-  }
-
-  .projectIcon {
-    color: var(--primary-color);
-    box-shadow: 0 0 0.5em var(--secondary-color) fff87;
-  }
-
-  .projectCategory {
-    border: none;
-  }
-
-  .projectInfo {
-    border: 1px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-  }
-
-  .projectInfo::before {
-    background-color: var(--secondary-color);
-  }
-
-  .imageContainer {
-    border-left: 1px solid var(--primary-color);
-  }
-}
-
 /*****************/
 /* Default rules */
 /*****************/
@@ -107,11 +74,11 @@
 }
 
 .EducationProjectCategory {
-  background-color: rgba(173, 216, 230, 0.9);
+  background-color: rgb(173, 216, 230);
 }
 
 .WorkProjectCategory {
-  background-color: rgba(255, 165, 0, 0.9);
+  background-color: rgb(255, 165, 0);
 }
 
 .projectDate {
@@ -178,6 +145,35 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s linear;
+}
+
+/**************************************************/
+/* Color scheme when device's theme is light mode */
+/**************************************************/
+
+@media (prefers-color-scheme: light) {
+  .pageHeading,
+  .projectDate {
+    color: var(--secondary-color);
+  }
+
+  .projectIcon {
+    color: var(--primary-color);
+    box-shadow: 0 0 0.5em var(--secondary-color) fff87;
+  }
+
+  .projectInfo {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+
+  .projectInfo::before {
+    background-color: var(--secondary-color);
+  }
+
+  .imageContainer {
+    border-left: 1px solid var(--primary-color);
+  }
 }
 
 /**********/

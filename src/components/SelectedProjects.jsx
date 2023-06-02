@@ -2,13 +2,23 @@ import { Nunito } from "next/font/google";
 import uniqid from "uniqid";
 import Image from "next/image";
 import educationProjectsInfoArray from "../educationProjectsInfoArray";
+import workProjectsInfoArray from "../workProjectsInfoArray";
 import styles from "@/src/styles/Home.module.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
+const projectsInfoArray = [
+  ...workProjectsInfoArray,
+  ...educationProjectsInfoArray,
+];
 let selectedProjects = [];
 
-for (const project of educationProjectsInfoArray) {
-  const namesOfSelectedProjects = ["Transform.", "Find", "YouTube Clone"];
+for (const project of projectsInfoArray) {
+  const namesOfSelectedProjects = [
+    "Find",
+    "React Image Grid Gallery",
+    "Transform.",
+    "YouTube Clone",
+  ];
   if (namesOfSelectedProjects.includes(project.name)) {
     selectedProjects.push(project);
   }
